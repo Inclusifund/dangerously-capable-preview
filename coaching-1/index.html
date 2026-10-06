@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dangerously Capable — Abdelrahman Ayman</title>
+<meta name="description" content="One-on-one coaching by Abdelrahman Ayman. The 12-week Dangerously Capable programme: training, nutrition and direct WhatsApp coaching, built around your life.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap">
+<style>
+:root{
+  --ground:#14110F; --panel:#1C1814; --panel-2:#241F1A; --bone:#EDE6DA; --bone-2:#B9AFA2; --bone-3:#7F766B;
+  --bronze:#C8783A; --bronze-hi:#E39A57; --rule:#332C25;
+  --display:"Big Shoulders Display","Archivo Narrow",Impact,sans-serif;
+  --sans:"Archivo","Helvetica Neue",Arial,sans-serif;
+  color-scheme:dark;
+}
+html[lang="ar"]{--sans:"IBM Plex Sans Arabic","Geeza Pro",Tahoma,sans-serif;--display:"IBM Plex Sans Arabic","Geeza Pro",Tahoma,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--ground);color:var(--bone);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{margin:0;line-height:.95;text-wrap:balance}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{line-height:1.3}
+h2{font-family:var(--display);font-weight:900;font-size:clamp(2.6rem,7vw,4.6rem);text-transform:uppercase;letter-spacing:.005em}
+h3{font-family:var(--sans);font-weight:700;font-size:1.1rem;line-height:1.3}
+p{margin:0;max-width:62ch}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--bronze)}
+html[lang="ar"] .eyebrow{letter-spacing:0;font-size:.9rem}
+.muted{color:var(--bone-2)}
+section{padding-block:88px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 24px;font-weight:700;font-size:1rem;text-decoration:none;border:2px solid var(--bronze);background:var(--bronze);color:#140d07;cursor:pointer;font-family:var(--sans)}
+.btn:hover{background:var(--bronze-hi);border-color:var(--bronze-hi)}
+.btn.ghost{background:transparent;color:var(--bone);border-color:var(--bone-3)}
+.btn.ghost:hover{border-color:var(--bone)}
+.btn:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--bronze-hi);outline-offset:3px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(20,17,15,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);padding-top:env(safe-area-inset-top,0px)}
+nav .wrap{display:flex;align-items:center;gap:22px;height:64px}
+.mark{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:1.35rem;letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+.mark b{color:var(--bronze)}
+nav .links{display:flex;gap:22px;margin-inline-start:auto;font-size:.92rem}
+nav .links a{text-decoration:none;color:var(--bone-2)}
+nav .links a:hover{color:var(--bone)}
+.lang{background:none;border:1px solid var(--bone-3);color:var(--bone);padding:6px 10px;font:600 .82rem var(--sans);cursor:pointer}
+nav .btn{padding:10px 16px;font-size:.9rem}
+@media (max-width:860px){nav .links{display:none}nav .lang{margin-inline-start:auto}}
+
+/* hero */
+.hero{padding-block:0;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:end;min-height:min(88vh,860px)}
+.hero-copy{padding-block:72px 64px;display:grid;gap:26px;align-content:end}
+.hero h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(3.6rem,10.5vw,8.4rem);line-height:.86;letter-spacing:-.005em}
+html[lang="ar"] .hero h1{font-size:clamp(2.8rem,8vw,5.6rem);line-height:1.15}
+.hero h1 em{font-style:normal;color:var(--bronze);display:block}
+.hero .sub{font-size:1.15rem;color:var(--bone-2);max-width:46ch}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .note{font-size:.85rem;color:var(--bone-3)}
+.hero-img{align-self:stretch;position:relative}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 20%;mask-image:linear-gradient(to top,transparent 0,#000 18%);-webkit-mask-image:linear-gradient(to top,transparent 0,#000 18%)}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;min-height:0}.hero-img{order:-1;height:62vh;margin-inline:-20px}.hero-copy{padding-block:0 56px;margin-top:-90px;position:relative}}
+
+/* proof strip */
+.proof{padding-block:0;border-block:1px solid var(--rule);background:var(--panel)}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr)}
+.proof li{padding:22px 18px;border-inline-start:1px solid var(--rule);display:grid;gap:2px}
+.proof li:first-child{border-inline-start:0}
+.proof strong{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:1.9rem;line-height:1;color:var(--bone)}
+.proof span{font-size:.82rem;color:var(--bone-2);line-height:1.35}
+@media (max-width:900px){.proof ul{grid-template-columns:repeat(2,1fr)}.proof li{border-inline-start:0;border-top:1px solid var(--rule)}.proof li:nth-child(-n+2){border-top:0}.proof li:last-child{grid-column:1/-1}}
+
+/* results */
+.sec-head{display:grid;gap:14px;margin-bottom:40px}
+.results-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.case{background:var(--panel);border:1px solid var(--rule);display:grid;grid-template-rows:auto 1fr}
+.ba{position:relative;aspect-ratio:3/4;overflow:hidden;background:#000;touch-action:pan-y;user-select:none}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.ba .after{clip-path:inset(0 0 0 var(--pos,50%))}
+.ba .handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;background:var(--bone);transform:translateX(-1px);pointer-events:none}
+.ba .handle::after{content:"";position:absolute;top:50%;left:50%;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:var(--bronze);box-shadow:0 0 0 3px var(--ground)}
+.ba .tag{position:absolute;bottom:10px;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:rgba(20,17,15,.8);padding:4px 8px}
+.ba .tag.b{left:10px}.ba .tag.a{right:10px;color:var(--bronze-hi)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.case .txt{padding:18px 18px 20px;display:grid;gap:6px;align-content:start}
+.case .meta{font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze)}
+.case p{font-size:.95rem;color:var(--bone-2)}
+.results-foot{margin-top:28px;font-size:.85rem;color:var(--bone-3)}
+
+/* fourteen days */
+.fourteen{background:var(--bone);color:#1a1510}
+.fourteen .wrap{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center}
+.fourteen .big{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:clamp(9rem,22vw,17rem);line-height:.8;color:var(--bronze)}
+.fourteen h2{color:#1a1510}
+.fourteen p{color:#4a4037;font-size:1.08rem}
+.fourteen .eyebrow{color:#8a4a1c}
+.fourteen .inner{display:grid;gap:16px}
+@media (max-width:760px){.fourteen .wrap{grid-template-columns:1fr;gap:12px}}
+
+/* programme */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media (max-width:900px){.tiles{grid-template-columns:repeat(2,1fr)}}@media (max-width:560px){.tiles{grid-template-columns:1fr}}
+.tile{background:var(--ground);padding:26px 22px;display:grid;gap:8px;align-content:start}
+.tile .n{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:800;font-size:1rem;color:var(--bronze)}
+.tile p{font-size:.95rem;color:var(--bone-2)}
+
+/* assessment */
+.assess{background:var(--panel);border-block:1px solid var(--rule)}
+.assess .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+@media (max-width:860px){.assess .wrap{grid-template-columns:1fr;gap:28px}}
+.quiz{background:var(--ground);border:1px solid var(--rule);padding:28px;display:grid;gap:20px;min-height:360px}
+.quiz .bar{height:4px;background:var(--rule)}.quiz .bar i{display:block;height:100%;background:var(--bronze);transition:width .3s}
+.quiz .q{font-size:1.25rem;font-weight:700}
+.opts{display:grid;gap:10px}
+.opt{text-align:start;background:var(--panel-2);border:1px solid var(--rule);color:var(--bone);padding:14px 16px;font:500 1rem var(--sans);cursor:pointer}
+.opt:hover{border-color:var(--bronze)}
+.result{display:grid;gap:14px}
+.result .score{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:4rem;line-height:1;color:var(--bronze)}
+.result .path{border-inline-start:3px solid var(--bronze);padding:12px 16px;background:var(--panel-2)}
+.small{font-size:.82rem;color:var(--bone-3)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:28px;counter-reset:s}
+@media (max-width:1000px){.steps{grid-template-columns:repeat(3,1fr)}}@media (max-width:560px){.steps{grid-template-columns:repeat(2,1fr)}}
+.step{display:grid;gap:8px;align-content:start;border-top:2px solid var(--bronze);padding-top:16px}
+.step .n{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:2.4rem;line-height:1;color:var(--bone-3)}
+.step p{font-size:.92rem;color:var(--bone-2)}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+@media (max-width:860px){.about .wrap{grid-template-columns:1fr}}
+.about .photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.about .photos img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.about .photos img:first-child{margin-top:48px}
+.about .inner{display:grid;gap:18px}
+.about blockquote{margin:0;font-family:var(--display);font-weight:900;font-size:2.2rem;line-height:1;text-transform:uppercase;color:var(--bronze)}
+html[lang="ar"] .about blockquote{line-height:1.4}
+.timeline{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.95rem}
+.timeline li{display:grid;grid-template-columns:5.2rem 1fr;gap:12px;color:var(--bone-2)}
+.timeline b{color:var(--bone);font-weight:600}
+
+/* paths */
+.paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.path{border:1px solid var(--rule);background:var(--panel);padding:26px;display:grid;gap:14px;align-content:start}
+.path.main{border-color:var(--bronze)}
+.path .who{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--bronze)}
+.path ul{margin:0;padding-inline-start:1.1em;display:grid;gap:5px;color:var(--bone-2);font-size:.94rem}
+.path .btn{justify-content:center}
+
+/* partners */
+.partners{position:relative;padding-block:0}
+.partners .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--rule)}
+@media (max-width:860px){.partners .wrap{grid-template-columns:1fr}}
+.partners .copy{padding:48px 40px;display:grid;gap:18px;align-content:center;background:var(--panel)}
+.partners .figs{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.partners .figs img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.stat{display:flex;gap:28px;flex-wrap:wrap}
+.stat div{display:grid}
+.stat strong{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:2.6rem;line-height:1;color:var(--bronze)}
+.stat span{font-size:.8rem;color:var(--bone-2)}
+
+/* faq */
+.faq{display:grid;gap:0;border-top:1px solid var(--rule);max-width:860px}
+details{border-bottom:1px solid var(--rule);padding:18px 0}
+summary{cursor:pointer;font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";color:var(--bronze);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"−"}
+details p{margin-top:10px;color:var(--bone-2)}
+
+/* final */
+.final{text-align:center;padding-block:110px;background:radial-gradient(ellipse at 50% 120%,#3a2414 0,var(--ground) 60%)}
+.final .wrap{display:grid;gap:22px;justify-items:center}
+.final h2{font-size:clamp(3rem,9vw,6.4rem)}
+.final h2 span{display:block;color:var(--bronze)}
+footer{border-top:1px solid var(--rule);padding-block:28px calc(28px + env(safe-area-inset-bottom,0px));font-size:.85rem;color:var(--bone-3)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+.demo-flag{position:fixed;inset-inline-end:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--bronze);color:#140d07;font:700 .72rem var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:6px 10px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="mark" href="#top">DANGEROUSLY <b>CAPABLE</b></a>
+    <div class="links">
+      <a href="#results" data-i18n="nav_results">Results</a>
+      <a href="#programme" data-i18n="nav_programme">The programme</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#partners" data-i18n="nav_partners">Brand partners</a>
+    </div>
+    <button class="lang" id="lang" type="button" aria-label="Switch language">العربية</button>
+    <a class="btn" href="#assessment" data-i18n="nav_cta">Start free</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="eyebrow" data-i18n="hero_eyebrow">Abdelrahman Ayman · One-on-one coaching</div>
+      <h1 data-i18n-html="hero_h1">Become<em>dangerously</em>capable</h1>
+      <p class="sub" data-i18n="hero_sub">I help people build the healthiest, strongest version of themselves: physically, mentally, and through a better relationship with how they live.</p>
+      <div class="ctas">
+        <a class="btn" href="#assessment" data-i18n="hero_cta1">Take the free assessment →</a>
+        <a class="btn ghost" href="#paths" data-i18n="hero_cta2">Apply for the 12 weeks</a>
+      </div>
+      <p class="note" data-i18n="hero_note">3 minutes. You get your calories, your macros and the right path for you.</p>
+    </div>
+    <div class="hero-img"><img src="img/hero.jpg" alt="Abdelrahman Ayman, studio portrait" fetchpriority="high"></div>
+  </div>
+</header>
+
+<div class="proof">
+  <div class="wrap">
+    <ul>
+      <li><strong>10+</strong><span data-i18n="p1">years coaching: online, gym floor, clinics</span></li>
+      <li><strong>9</strong><span data-i18n="p2">clients who let us show their change</span></li>
+      <li><strong>4TH · 6TH</strong><span data-i18n="p3">Fujairah · Dubai Muscle Classic, Classic Physique</span></li>
+      <li><strong>3.3M</strong><span data-i18n="p4">views on his Philips campaign</span></li>
+      <li><strong>ISSA · NASM</strong><span data-i18n="p5">qualified trainer, nutrition &amp; transformation specialist</span></li>
+    </ul>
+  </div>
+</div>
+
+<section id="results">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="res_eyebrow">Real people. Real results.</div>
+      <h2 data-i18n="res_h2">Drag to see the change</h2>
+      <p class="muted" data-i18n="res_sub">Busy professionals, parents, a professor, an art director. Different bodies, different lives, one method.</p>
+    </div>
+    <div class="results-grid" id="cases"></div>
+    <p class="results-foot" data-i18n="res_foot">Shared with each client's permission. Results depend on the person, the plan and the work.</p>
+  </div>
+</section>
+
+<section class="fourteen">
+  <div class="wrap">
+    <div class="big">14</div>
+    <div class="inner">
+      <div class="eyebrow" data-i18n="f_eyebrow">Why this works</div>
+      <h2 data-i18n="f_h2">The first 14 days, I'm with you every day</h2>
+      <p data-i18n="f_p1">The first two weeks decide everything. You don't know what to buy, how to train, what the plan means. That's when most people quit and most coaches go quiet.</p>
+      <p data-i18n="f_p2">So that's where I'm most present. You ask, I explain the whole reason, not just yes or no, until you understand your own plan.</p>
+    </div>
+  </div>
+</section>
+
+<section id="programme">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="pg_eyebrow">The Dangerously Capable 12-week programme</div>
+      <h2 data-i18n="pg_h2">More than a training plan</h2>
+      <p class="muted" data-i18n="pg_sub">No generic PDF. No template. Everything is built around your body, your schedule and your life, and it changes as you do.</p>
+    </div>
+    <div class="tiles">
+      <div class="tile"><span class="n">01</span><h3 data-i18n="t1h">Full assessment</h3><p data-i18n="t1p">Body composition, training history, mobility, sleep, work, food, injuries. Everything that shapes your plan.</p></div>
+      <div class="tile"><span class="n">02</span><h3 data-i18n="t2h">Training in the app</h3><p data-i18n="t2p">Every exercise with demos, photos and instruction. Gym, home, outdoors or travel.</p></div>
+      <div class="tile"><span class="n">03</span><h3 data-i18n="t3h">Nutrition for real life</h3><p data-i18n="t3p">Built around your schedule and the food you actually like. You learn to eat for life, not survive a diet.</p></div>
+      <div class="tile"><span class="n">04</span><h3 data-i18n="t4h">Me on WhatsApp</h3><p data-i18n="t4p">Stuck mid-workout? Send a video. Travel, schedule change, bad week? We adapt together.</p></div>
+      <div class="tile"><span class="n">05</span><h3 data-i18n="t5h">Education</h3><p data-i18n="t5p">You'll understand why: your calories, your cardio, your plateau. The goal is that you never need a coach again.</p></div>
+      <div class="tile"><span class="n">06</span><h3 data-i18n="t6h">Health first</h3><p data-i18n="t6p">Where it matters we look at bloodwork and work with medical specialists. A better body means nothing if your health pays for it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="assess" id="assessment">
+  <div class="wrap">
+    <div class="sec-head" style="margin:0">
+      <div class="eyebrow" data-i18n="a_eyebrow">Free · 3 minutes</div>
+      <h2 data-i18n="a_h2">How capable are you right now?</h2>
+      <p class="muted" data-i18n="a_sub">Answer a few questions. You get your starting numbers and the path that fits your life, whether that's free or coached.</p>
+      <p class="small" data-i18n="a_demo">Preview: the full assessment calculates your calories and macros and saves your answers so Abdelrahman can read them before your call.</p>
+    </div>
+    <div class="quiz" id="quiz" aria-live="polite"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="hw_eyebrow">How it works</div>
+      <h2 data-i18n="hw_h2">Six steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><h3 data-i18n="s1h">Apply</h3><p data-i18n="s1p">Tell me where you are and what you want.</p></div>
+      <div class="step"><span class="n">02</span><h3 data-i18n="s2h">Assessment</h3><p data-i18n="s2p">We go deep: body, history, movement, lifestyle.</p></div>
+      <div class="step"><span class="n">03</span><h3 data-i18n="s3h">Your plan</h3><p data-i18n="s3p">Training and nutrition built around you.</p></div>
+      <div class="step"><span class="n">04</span><h3 data-i18n="s4h">Coaching</h3><p data-i18n="s4p">Direct WhatsApp with me, daily in the first 14 days.</p></div>
+      <div class="step"><span class="n">05</span><h3 data-i18n="s5h">Adjust</h3><p data-i18n="s5p">Nothing is locked on day one. Your plan evolves.</p></div>
+      <div class="step"><span class="n">06</span><h3 data-i18n="s6h">Capable</h3><p data-i18n="s6p">You leave with the body and the knowledge to keep it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="photos">
+      <img src="img/stage-medal.jpg" decoding="async" alt="On stage at Dubai Muscle Classic">
+      <img src="img/gym.jpg" decoding="async" alt="Training in the gym">
+    </div>
+    <div class="inner">
+      <div class="eyebrow" data-i18n="ab_eyebrow">About Abdelrahman</div>
+      <h2 data-i18n="ab_h2">I've seen both sides of the stage</h2>
+      <p class="muted" data-i18n="ab_p1">I was studying logistics at AAST when training took over my life. I got the physique I'd dreamed of at 20 and realised I didn't understand how it happened. So I went and learned: diplomas, nutrition clinics, the gym floor, my own online company in 2020, then building from scratch as a personal trainer in Dubai.</p>
+      <p class="muted" data-i18n="ab_p2">Ten years in, I coach the way I wish someone had coached me: so you understand your body, not just follow a plan.</p>
+      <ul class="timeline">
+        <li><b>AAST</b><span data-i18n="tl1">1st place, college championship, Men's Physique</span></li>
+        <li><b>Dubai</b><span data-i18n="tl2">Top 10, Dubai Muscle Beach · Classic Physique</span></li>
+        <li><b>Fujairah</b><span data-i18n="tl3">4th place, Classic Physique</span></li>
+        <li><b>Dubai</b><span data-i18n="tl4">6th place, Dubai Muscle Classic</span></li>
+      </ul>
+      <blockquote data-i18n="ab_q">Born to be free.</blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="paths">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="pa_eyebrow">Choose your path</div>
+      <h2 data-i18n="pa_h2">Start where you are</h2>
+    </div>
+    <div class="paths">
+      <div class="path">
+        <span class="who" data-i18n="pa1w">Free</span>
+        <h3 data-i18n="pa1h">Capability Assessment</h3>
+        <ul><li data-i18n="pa1a">Your calories and macros</li><li data-i18n="pa1b">Your capability score</li><li data-i18n="pa1c">Weekly live Q&amp;A on Instagram</li></ul>
+        <a class="btn ghost" href="#assessment" data-i18n="pa1cta">Take it free</a>
+      </div>
+      <div class="path main">
+        <span class="who" data-i18n="pa2w">The core programme</span>
+        <h3 data-i18n="pa2h">Dangerously Capable · 12 weeks</h3>
+        <ul><li data-i18n="pa2a">Full assessment + onboarding call with me</li><li data-i18n="pa2b">Personal training &amp; nutrition in the app</li><li data-i18n="pa2c">Daily WhatsApp in the first 14 days, weekly after</li><li data-i18n="pa2d">Continuous adjustments for 12 weeks</li></ul>
+        <a class="btn" href="#assessment" data-i18n="pa2cta">Apply now</a>
+      </div>
+      <div class="path">
+        <span class="who" data-i18n="pa3w">By application</span>
+        <h3 data-i18n="pa3h">Elite</h3>
+        <ul><li data-i18n="pa3a">Me throughout, in person in New Cairo</li><li data-i18n="pa3b">Bloodwork with a medical partner</li><li data-i18n="pa3c">Priority access, limited places</li></ul>
+        <a class="btn ghost" href="#assessment" data-i18n="pa3cta">Request a place</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="partners" id="partners">
+  <div class="wrap">
+    <div class="copy">
+      <div class="eyebrow" data-i18n="br_eyebrow">For brands</div>
+      <h2 data-i18n="br_h2">A face brands build campaigns around</h2>
+      <p class="muted" data-i18n="br_p">His Philips Middle East reel reached more than 3.3 million people, about 25 times the brand's own following. Mr Beard's biggest posts are his face. Grooming, menswear, hospitality, lifestyle.</p>
+      <div class="stat">
+        <div><strong>3.3M</strong><span>Philips Middle East</span></div>
+        <div><strong>261K</strong><span>Mr Beard campaign</span></div>
+      </div>
+      <a class="btn ghost" href="#" data-i18n="br_cta">Partnership enquiries →</a>
+    </div>
+    <div class="figs">
+      <img src="img/dubai-jetski.jpg" decoding="async" alt="Dubai, Burj Al Arab">
+      <img src="img/editorial.jpg" decoding="async" alt="Editorial portrait">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">FAQ</div>
+      <h2 data-i18n="fq_h2">Questions</h2>
+    </div>
+    <div class="faq">
+      <details><summary data-i18n="q1">Do I need previous training experience?</summary><p data-i18n="a1">No. If you're a beginner we start from your current ability. You can send videos of your exercises and I'll guide you step by step until you're confident on your own.</p></details>
+      <details><summary data-i18n="q2">Do I need a gym?</summary><p data-i18n="a2">No. Plans are built for a commercial gym, a home gym, minimal equipment, outdoors or travel. Several results above were done at home.</p></details>
+      <details><summary data-i18n="q3">Is nutrition included?</summary><p data-i18n="a3">Yes. It's built around your schedule, your work and the food you like, and you learn why, so you can keep eating well after the 12 weeks.</p></details>
+      <details><summary data-i18n="q4">How does WhatsApp coaching work?</summary><p data-i18n="a4">You message me directly with questions, videos, problems or schedule changes, and I answer with the reasoning, not just yes or no. Daily in the first 14 days.</p></details>
+      <details><summary data-i18n="q5">Is this only for bodybuilding?</summary><p data-i18n="a5">No. Bodybuilding is part of the process, not the goal. The goal is a body that looks powerful, moves well and performs.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 data-i18n-html="fin_h2">Your decision.<span>Our guidance.</span>Your future.</h2>
+    <a class="btn" href="#assessment" data-i18n="fin_cta">Start the free assessment →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Dangerously Capable · Abdelrahman Ayman</span>
+    <span>Instagram @coach.boodi</span>
+  </div>
+</footer>
+
+<div class="demo-flag">Example 1 · draft</div>
+
+<script>
+const CASES=[
+ {k:"afifi",n:"Dr Afifi",m:"Busy professor",en:"A tight schedule and weight that was affecting his work. A nutrition plan that fit his days, home workouts, and a big change.",ar:"جدول مزحوم ووزن بيأثر على شغله. خطة أكل على مقاس يومه وتمارين في البيت، والفرق كبير."},
+ {k:"saeed",n:"Saeed",m:"Health first",en:"Came in with high cholesterol and short breath. Nutrition, resistance training and cardio, and his bloodwork came back in range.",ar:"جه بكوليسترول عالي ونهجان. أكل مظبوط وتمارين مقاومة وكارديو، وتحاليله رجعت طبيعية."},
+ {k:"sama",n:"Sama",m:"12 weeks",en:"An art director with a long, unpredictable schedule. Built muscle and lost fat inside that lifestyle.",ar:"آرت دايركتور بجدول طويل ومش متوقع. كسبت عضل ونزلت دهون جوه نفس اللايف ستايل."},
+ {k:"bezo",n:"Mohamed “Bezo”",m:"4 weeks",en:"A training plan built for him, followed properly for four weeks.",ar:"خطة تمرين معمولة ليه، مشي عليها صح أربع أسابيع."},
+ {k:"mohammad",n:"Mohammad",m:"4 weeks · works abroad",en:"A busy professional living alone abroad. Balanced nutrition and short home workouts around a hectic day.",ar:"بروفيشنال مشغول عايش لوحده برا. أكل متوازن وتمارين قصيرة في البيت وسط يوم مزحوم."},
+ {k:"abdullah",n:"Abdullah",m:"2 weeks",en:"Wanted a quick summer cut. Two weeks to shredded.",ar:"كان عايز تنشيف سريع للصيف. أسبوعين وكان جاهز."},
+ {k:"seif",n:"Seif",m:"12 weeks · at home",en:"Lockdown 2020, a pair of dumbbells and a plan he followed to the letter. Lost 15% body fat and built 5 kg of muscle.",ar:"لوكداون ٢٠٢٠، جوز دمبلز وخطة مشي عليها بالحرف. نزل ١٥٪ دهون وزوّد ٥ كيلو عضل."},
+ {k:"nada",n:"Nada",m:"12 weeks",en:"Lost 20 kg of fat and gained muscle, strength and shape. Years later, as a mother, she still knows exactly how to look after herself.",ar:"نزلت ٢٠ كيلو دهون وكسبت عضل وقوة وشكل. وبعد سنين، وهي أم، لسه عارفة تتعامل مع نفسها إزاي."},
+ {k:"mostafa",n:"Mostafa",m:"6 months",en:"Came in stuck on a plateau. Six months of close follow-up rebuilt his habits, his body and his confidence, and it showed at work.",ar:"جه وهو واقف عند البلاتو. ست شهور متابعة قريبة غيّرت عاداته وجسمه وثقته، وده بان في شغله."}
+];
+const grid=document.getElementById("cases");
+CASES.forEach(c=>{
+  const el=document.createElement("article");el.className="case";
+  el.innerHTML=`<div class="ba" style="--pos:50%"><img src="img/${c.k}-before.jpg" alt="${c.n} before" loading="lazy"><img class="after" src="img/${c.k}-after.jpg" alt="${c.n} after" loading="lazy"><span class="tag b">Before</span><span class="tag a">After</span><div class="handle"></div><input type="range" min="0" max="100" value="50" aria-label="Compare ${c.n} before and after"></div><div class="txt"><span class="meta">${c.m}</span><h3>${c.n}</h3><p data-en="${c.en.replace(/"/g,'&quot;')}" data-ar="${c.ar}">${c.en}</p></div>`;
+  const ba=el.querySelector(".ba");el.querySelector("input").addEventListener("input",e=>ba.style.setProperty("--pos",e.target.value+"%"));
+  grid.appendChild(el);
+});
+
+// assessment preview (no data saved)
+const Q=[
+ {q:{en:"What do you want most?",ar:"إنت عايز إيه أكتر حاجة؟"},o:[["lose","Lose fat","أنزل دهون"],["build","Build muscle","أبني عضل"],["both","Both: recomposition","الاتنين مع بعض"],["health","Health & energy","صحة وطاقة"]]},
+ {q:{en:"Where will you train?",ar:"هتتمرن فين؟"},o:[["gym","Gym","جيم"],["home","Home","البيت"],["mix","Both / travelling","الاتنين / مسافر"]]},
+ {q:{en:"How many days a week can you really train?",ar:"تقدر تتمرن كام يوم في الأسبوع بجد؟"},o:[["2","2 or less","يومين أو أقل"],["3","3–4","٣–٤"],["5","5+","٥ أو أكتر"]]},
+ {q:{en:"How much help do you want?",ar:"عايز مساعدة قد إيه؟"},o:[["self","A plan I follow myself","خطة أمشي عليها لوحدي"],["coach","A coach with me every day","كوتش معايا كل يوم"],["elite","Everything, in person if possible","كل حاجة، ولو ينفع وجهاً لوجه"]]}
+];
+let step=0,ans={},lang="en";const quiz=document.getElementById("quiz");
+function render(){
+  if(step<Q.length){const q=Q[step];
+    quiz.innerHTML=`<div class="bar"><i style="width:${(step/Q.length)*100}%"></i></div><div class="small">${lang==="ar"?"سؤال":"Question"} ${step+1} / ${Q.length}</div><div class="q">${q.q[lang]}</div><div class="opts">${q.o.map(o=>`<button class="opt" type="button" data-v="${o[0]}">${lang==="ar"?o[2]:o[1]}</button>`).join("")}</div>`;
+    quiz.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{ans[step]=b.dataset.v;step++;render();});
+  }else{
+    const score=Math.min(92,48+({"2":4,"3":12,"5":18}[ans[2]]||0)+({gym:10,home:6,mix:8}[ans[1]]||0)+({coach:12,elite:14,self:4}[ans[3]]||0));
+    const path=ans[3]==="elite"?(lang==="ar"?"إيليت — بالتقديم":"Elite — by application"):ans[3]==="coach"?(lang==="ar"?"برنامج الـ١٢ أسبوع":"The 12-week programme"):(lang==="ar"?"تبدأ مجاناً — والخطة الذاتية":"Start free, then self-led");
+    quiz.innerHTML=`<div class="bar"><i style="width:100%"></i></div><div class="result"><div class="small">${lang==="ar"?"درجة القدرة":"Your capability score"}</div><div class="score">${score}</div><div class="path"><div class="small">${lang==="ar"?"الطريق المناسب ليك":"Your path"}</div><strong>${path}</strong></div><p class="muted">${lang==="ar"?"في النسخة الكاملة: سعراتك والماكروز بتاعتك، وإجاباتك بتوصل لعبد الرحمن قبل المكالمة.":"In the full version: your calories and macros, and your answers go to Abdelrahman before your call."}</p><button class="btn ghost" type="button" id="again">${lang==="ar"?"ابدأ من الأول":"Start again"}</button></div>`;
+    document.getElementById("again").onclick=()=>{step=0;ans={};render();};
+  }
+}
+render();
+
+// language toggle (Egyptian Arabic)
+const AR={nav_results:"النتايج",nav_programme:"البرنامج",nav_about:"عني",nav_partners:"للبراندات",nav_cta:"ابدأ مجاناً",
+hero_eyebrow:"عبد الرحمن أيمن · كوتشينج وان تو وان",hero_h1:"خليك<em>قادر</em>بشكل خطير",hero_sub:"بساعد الناس يوصلوا لأقوى وأصح نسخة من نفسهم: جسدياً، وذهنياً، وفي علاقتهم بطريقة عيشتهم.",hero_cta1:"اعمل التقييم المجاني ←",hero_cta2:"قدّم على الـ١٢ أسبوع",hero_note:"٣ دقايق. هتعرف سعراتك والماكروز والطريق المناسب ليك.",
+p1:"سنين كوتشينج: أونلاين، في الجيم، وفي عيادات التغذية",p2:"عملاء سمحولنا نوري التغيير بتاعهم",p3:"الفجيرة · دبي ماسل كلاسيك، كلاسيك فيزيك",p4:"مشاهدة لحملة فيليبس",p5:"مدرب مؤهل، تغذية وترانسفورميشن",
+res_eyebrow:"ناس حقيقية. نتايج حقيقية.",res_h2:"اسحب وشوف الفرق",res_sub:"ناس مشغولين، أمهات، دكتور جامعة، آرت دايركتور. أجسام مختلفة، حياة مختلفة، ونفس الطريقة.",res_foot:"منشورة بإذن كل عميل. النتايج بتختلف حسب الشخص والخطة والمجهود.",
+f_eyebrow:"ليه بتنجح",f_h2:"أول ١٤ يوم، أنا معاك كل يوم",f_p1:"أول أسبوعين بيحددوا كل حاجة. مش عارف تشتري إيه، تتمرن إزاي، الخطة معناها إيه. ده الوقت اللي أغلب الناس بتوقف فيه وأغلب الكوتشز بيختفوا.",f_p2:"عشان كده ده الوقت اللي بكون موجود فيه أكتر. تسأل، أشرحلك السبب كله مش بس آه أو لأ، لحد ما تفهم خطتك بنفسك.",
+pg_eyebrow:"برنامج دينجرسلي كيبابل ١٢ أسبوع",pg_h2:"أكتر من خطة تمرين",pg_sub:"مفيش PDF عام. مفيش تمبليت. كل حاجة معمولة على جسمك وجدولك وحياتك، وبتتغير معاك.",
+t1h:"تقييم كامل",t1p:"تكوين الجسم، تاريخك في التمرين، المرونة، النوم، الشغل، الأكل، الإصابات. كل اللي بيشكّل خطتك.",t2h:"التمرين على الأبلكيشن",t2p:"كل تمرين بفيديو وصور وشرح. جيم، بيت، برا، أو سفر.",t3h:"أكل على مقاس حياتك",t3p:"معمول على جدولك والأكل اللي بتحبه. بتتعلم تاكل صح طول عمرك، مش تستحمل دايت.",t4h:"أنا على الواتساب",t4p:"وقفت في نص التمرين؟ ابعت فيديو. سفر، جدول اتغيّر، أسبوع وحش؟ بنظبط مع بعض.",t5h:"تعليم",t5p:"هتفهم ليه: سعراتك، الكارديو، البلاتو. الهدف إنك ماتحتاجش كوتش تاني.",t6h:"الصحة الأول",t6p:"لما يفرق، بنبص على التحاليل وبنشتغل مع أخصائيين. جسم أحلى ملوش لازمة لو صحتك هي اللي هتدفع التمن.",
+a_eyebrow:"مجاني · ٣ دقايق",a_h2:"إنت قادر قد إيه دلوقتي؟",a_sub:"جاوب على كام سؤال. هتاخد أرقام البداية والطريق اللي يناسب حياتك، سواء مجاني أو مع كوتش.",a_demo:"معاينة: التقييم الكامل بيحسب سعراتك والماكروز ويحفظ إجاباتك عشان عبد الرحمن يقراها قبل مكالمتك.",
+hw_eyebrow:"إزاي بتشتغل",hw_h2:"ست خطوات",s1h:"قدّم",s1p:"قولي إنت فين وعايز إيه.",s2h:"التقييم",s2p:"بندخل في التفاصيل: الجسم، التاريخ، الحركة، اللايف ستايل.",s3h:"خطتك",s3p:"تمرين وأكل معمولين عليك.",s4h:"الكوتشينج",s4p:"واتساب معايا مباشرة، كل يوم في أول ١٤ يوم.",s5h:"نظبط",s5p:"مفيش حاجة ثابتة من أول يوم. خطتك بتتطور.",s6h:"قادر",s6p:"بتخرج بالجسم والمعرفة اللي تحافظ عليه.",
+ab_eyebrow:"عن عبد الرحمن",ab_h2:"شفت الاستيدج من الناحيتين",ab_p1:"كنت بدرس لوجستيات في الأكاديمية العربية لما التمرين خد حياتي. وصلت للجسم اللي كنت بحلم بيه وأنا عندي ٢٠ سنة واكتشفت إني مش فاهم ده حصل إزاي. فرحت اتعلمت: دبلومات، عيادات تغذية، الجيم، شركتي أونلاين سنة ٢٠٢٠، وبعدين بنيت نفسي من الصفر كبيرسونال ترينر في دبي.",ab_p2:"بعد عشر سنين، بدرّب بالطريقة اللي كنت أتمنى حد يدربني بيها: إنك تفهم جسمك، مش بس تمشي على خطة.",tl1:"المركز الأول، بطولة الجامعة، مينز فيزيك",tl2:"توب ١٠، دبي ماسل بيتش · كلاسيك فيزيك",tl3:"المركز الرابع، كلاسيك فيزيك",tl4:"المركز السادس، دبي ماسل كلاسيك",ab_q:"اتولدت عشان أبقى حر.",
+pa_eyebrow:"اختار طريقك",pa_h2:"ابدأ من مكانك",pa1w:"مجاني",pa1h:"تقييم القدرة",pa1a:"سعراتك والماكروز",pa1b:"درجة القدرة بتاعتك",pa1c:"لايف أسبوعي على إنستجرام",pa1cta:"اعمله مجاناً",pa2w:"البرنامج الأساسي",pa2h:"دينجرسلي كيبابل · ١٢ أسبوع",pa2a:"تقييم كامل + مكالمة بداية معايا",pa2b:"تمرين وأكل شخصي على الأبلكيشن",pa2c:"واتساب يومي أول ١٤ يوم، وأسبوعي بعدها",pa2d:"تعديلات مستمرة طول الـ١٢ أسبوع",pa2cta:"قدّم دلوقتي",pa3w:"بالتقديم",pa3h:"إيليت",pa3a:"أنا معاك طول الوقت، ووجهاً لوجه في القاهرة الجديدة",pa3b:"تحاليل مع شريك طبي",pa3c:"أولوية، وأماكن محدودة",pa3cta:"اطلب مكان",
+br_eyebrow:"للبراندات",br_h2:"وش البراندات بتبني عليه حملاتها",br_p:"ريل فيليبس الشرق الأوسط بتاعه وصل لأكتر من ٣.٣ مليون شخص، حوالي ٢٥ ضعف متابعين البراند نفسه. أكبر بوستات مستر بيرد هي وشه. جرومنج، ملابس رجالي، فنادق، لايف ستايل.",br_cta:"للتعاون ←",
+fq_h2:"أسئلة",q1:"محتاج خبرة تمرين قبل كده؟",a1:"لأ. لو مبتدئ بنبدأ من مستواك. تقدر تبعتلي فيديوهات تمارينك وأنا أوجهك خطوة بخطوة لحد ما تبقى واثق لوحدك.",q2:"محتاج جيم؟",a2:"لأ. الخطة بتتعمل لجيم، جيم في البيت، أدوات قليلة، برا، أو سفر. كذا نتيجة فوق اتعملت في البيت.",q3:"الأكل داخل في البرنامج؟",a3:"أيوه. معمول على جدولك وشغلك والأكل اللي بتحبه، وبتفهم ليه، عشان تفضل تاكل صح بعد الـ١٢ أسبوع.",q4:"الكوتشينج على الواتساب بيشتغل إزاي؟",a4:"بتبعتلي مباشرة أسئلة، فيديوهات، مشاكل، أو تغيير في جدولك، وبرد بالسبب مش بس آه أو لأ. كل يوم في أول ١٤ يوم.",q5:"ده لكمال الأجسام بس؟",a5:"لأ. كمال الأجسام جزء من الطريق مش الهدف. الهدف جسم شكله قوي، بيتحرك كويس، وبيأدي.",
+fin_h2:"قرارك.<span>توجيهنا.</span>مستقبلك.",fin_cta:"ابدأ التقييم المجاني ←"};
+const EN={};document.querySelectorAll("[data-i18n]").forEach(e=>EN[e.dataset.i18n]=e.textContent);document.querySelectorAll("[data-i18n-html]").forEach(e=>EN[e.dataset.i18nHtml]=e.innerHTML);
+document.getElementById("lang").onclick=()=>{
+  lang=lang==="en"?"ar":"en";const d=lang==="ar"?AR:EN;
+  document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+  document.querySelectorAll("[data-i18n]").forEach(e=>{const v=d[e.dataset.i18n];if(v)e.textContent=v});
+  document.querySelectorAll("[data-i18n-html]").forEach(e=>{const v=d[e.dataset.i18nHtml];if(v)e.innerHTML=v});
+  document.querySelectorAll("[data-en]").forEach(e=>e.textContent=e.dataset[lang]);
+  document.getElementById("lang").textContent=lang==="ar"?"English":"العربية";
+  render();
+};
+</script>
+</body>
+</html>

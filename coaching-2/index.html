@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dangerously Capable — You need someone who answers</title>
+<meta name="description" content="One-on-one coaching by Abdelrahman Ayman. The 12-week Dangerously Capable programme: training, nutrition and direct WhatsApp coaching, built around your life.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap">
+<style>
+:root{
+  --ground:#14110F; --panel:#1C1814; --panel-2:#241F1A; --bone:#EDE6DA; --bone-2:#B9AFA2; --bone-3:#7F766B;
+  --bronze:#C8783A; --bronze-hi:#E39A57; --rule:#332C25;
+  --display:"Big Shoulders Display","Archivo Narrow",Impact,sans-serif;
+  --sans:"Archivo","Helvetica Neue",Arial,sans-serif;
+  color-scheme:dark;
+}
+html[lang="ar"]{--sans:"IBM Plex Sans Arabic","Geeza Pro",Tahoma,sans-serif;--display:"IBM Plex Sans Arabic","Geeza Pro",Tahoma,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--ground);color:var(--bone);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{margin:0;line-height:.95;text-wrap:balance}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{line-height:1.3}
+h2{font-family:var(--display);font-weight:900;font-size:clamp(2.6rem,7vw,4.6rem);text-transform:uppercase;letter-spacing:.005em}
+h3{font-family:var(--sans);font-weight:700;font-size:1.1rem;line-height:1.3}
+p{margin:0;max-width:62ch}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--bronze)}
+html[lang="ar"] .eyebrow{letter-spacing:0;font-size:.9rem}
+.muted{color:var(--bone-2)}
+section{padding-block:88px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 24px;font-weight:700;font-size:1rem;text-decoration:none;border:2px solid var(--bronze);background:var(--bronze);color:#140d07;cursor:pointer;font-family:var(--sans)}
+.btn:hover{background:var(--bronze-hi);border-color:var(--bronze-hi)}
+.btn.ghost{background:transparent;color:var(--bone);border-color:var(--bone-3)}
+.btn.ghost:hover{border-color:var(--bone)}
+.btn:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--bronze-hi);outline-offset:3px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(20,17,15,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);padding-top:env(safe-area-inset-top,0px)}
+nav .wrap{display:flex;align-items:center;gap:22px;height:64px}
+.mark{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:1.35rem;letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+.mark b{color:var(--bronze)}
+nav .links{display:flex;gap:22px;margin-inline-start:auto;font-size:.92rem}
+nav .links a{text-decoration:none;color:var(--bone-2)}
+nav .links a:hover{color:var(--bone)}
+.lang{background:none;border:1px solid var(--bone-3);color:var(--bone);padding:6px 10px;font:600 .82rem var(--sans);cursor:pointer}
+nav .btn{padding:10px 16px;font-size:.9rem}
+@media (max-width:860px){nav .links{display:none}nav .lang{margin-inline-start:auto}}
+
+/* hero */
+.hero{padding-block:0;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:end;min-height:min(88vh,860px)}
+.hero-copy{padding-block:72px 64px;display:grid;gap:26px;align-content:end}
+.hero h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(3.6rem,10.5vw,8.4rem);line-height:.86;letter-spacing:-.005em}
+html[lang="ar"] .hero h1{font-size:clamp(2.8rem,8vw,5.6rem);line-height:1.15}
+.hero h1 em{font-style:normal;color:var(--bronze);display:block}
+.hero .sub{font-size:1.15rem;color:var(--bone-2);max-width:46ch}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .note{font-size:.85rem;color:var(--bone-3)}
+.hero-img{align-self:stretch;position:relative}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 20%;mask-image:linear-gradient(to top,transparent 0,#000 18%);-webkit-mask-image:linear-gradient(to top,transparent 0,#000 18%)}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;min-height:0}.hero-img{order:-1;height:62vh;margin-inline:-20px}.hero-copy{padding-block:0 56px;margin-top:-90px;position:relative}}
+
+/* proof strip */
+.proof{padding-block:0;border-block:1px solid var(--rule);background:var(--panel)}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr)}
+.proof li{padding:22px 18px;border-inline-start:1px solid var(--rule);display:grid;gap:2px}
+.proof li:first-child{border-inline-start:0}
+.proof strong{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:1.9rem;line-height:1;color:var(--bone)}
+.proof span{font-size:.82rem;color:var(--bone-2);line-height:1.35}
+@media (max-width:900px){.proof ul{grid-template-columns:repeat(2,1fr)}.proof li{border-inline-start:0;border-top:1px solid var(--rule)}.proof li:nth-child(-n+2){border-top:0}.proof li:last-child{grid-column:1/-1}}
+
+/* results */
+.sec-head{display:grid;gap:14px;margin-bottom:40px}
+.results-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.case{background:var(--panel);border:1px solid var(--rule);display:grid;grid-template-rows:auto 1fr}
+.ba{position:relative;aspect-ratio:3/4;overflow:hidden;background:#000;touch-action:pan-y;user-select:none}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.ba .after{clip-path:inset(0 0 0 var(--pos,50%))}
+.ba .handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;background:var(--bone);transform:translateX(-1px);pointer-events:none}
+.ba .handle::after{content:"";position:absolute;top:50%;left:50%;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:var(--bronze);box-shadow:0 0 0 3px var(--ground)}
+.ba .tag{position:absolute;bottom:10px;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:rgba(20,17,15,.8);padding:4px 8px}
+.ba .tag.b{left:10px}.ba .tag.a{right:10px;color:var(--bronze-hi)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.case .txt{padding:18px 18px 20px;display:grid;gap:6px;align-content:start}
+.case .meta{font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze)}
+.case p{font-size:.95rem;color:var(--bone-2)}
+.results-foot{margin-top:28px;font-size:.85rem;color:var(--bone-3)}
+
+/* fourteen days */
+.fourteen{background:var(--bone);color:#1a1510}
+.fourteen .wrap{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center}
+.fourteen .big{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:clamp(9rem,22vw,17rem);line-height:.8;color:var(--bronze)}
+.fourteen h2{color:#1a1510}
+.fourteen p{color:#4a4037;font-size:1.08rem}
+.fourteen .eyebrow{color:#8a4a1c}
+.fourteen .inner{display:grid;gap:16px}
+@media (max-width:760px){.fourteen .wrap{grid-template-columns:1fr;gap:12px}}
+
+/* programme */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media (max-width:900px){.tiles{grid-template-columns:repeat(2,1fr)}}@media (max-width:560px){.tiles{grid-template-columns:1fr}}
+.tile{background:var(--ground);padding:26px 22px;display:grid;gap:8px;align-content:start}
+.tile .n{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:800;font-size:1rem;color:var(--bronze)}
+.tile p{font-size:.95rem;color:var(--bone-2)}
+
+/* assessment */
+.assess{background:var(--panel);border-block:1px solid var(--rule)}
+.assess .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+@media (max-width:860px){.assess .wrap{grid-template-columns:1fr;gap:28px}}
+.quiz{background:var(--ground);border:1px solid var(--rule);padding:28px;display:grid;gap:20px;min-height:360px}
+.quiz .bar{height:4px;background:var(--rule)}.quiz .bar i{display:block;height:100%;background:var(--bronze);transition:width .3s}
+.quiz .q{font-size:1.25rem;font-weight:700}
+.opts{display:grid;gap:10px}
+.opt{text-align:start;background:var(--panel-2);border:1px solid var(--rule);color:var(--bone);padding:14px 16px;font:500 1rem var(--sans);cursor:pointer}
+.opt:hover{border-color:var(--bronze)}
+.result{display:grid;gap:14px}
+.result .score{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:4rem;line-height:1;color:var(--bronze)}
+.result .path{border-inline-start:3px solid var(--bronze);padding:12px 16px;background:var(--panel-2)}
+.small{font-size:.82rem;color:var(--bone-3)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:28px;counter-reset:s}
+@media (max-width:1000px){.steps{grid-template-columns:repeat(3,1fr)}}@media (max-width:560px){.steps{grid-template-columns:repeat(2,1fr)}}
+.step{display:grid;gap:8px;align-content:start;border-top:2px solid var(--bronze);padding-top:16px}
+.step .n{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:2.4rem;line-height:1;color:var(--bone-3)}
+.step p{font-size:.92rem;color:var(--bone-2)}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+@media (max-width:860px){.about .wrap{grid-template-columns:1fr}}
+.about .photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.about .photos img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.about .photos img:first-child{margin-top:48px}
+.about .inner{display:grid;gap:18px}
+.about blockquote{margin:0;font-family:var(--display);font-weight:900;font-size:2.2rem;line-height:1;text-transform:uppercase;color:var(--bronze)}
+html[lang="ar"] .about blockquote{line-height:1.4}
+.timeline{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.95rem}
+.timeline li{display:grid;grid-template-columns:5.2rem 1fr;gap:12px;color:var(--bone-2)}
+.timeline b{color:var(--bone);font-weight:600}
+
+/* paths */
+.paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.path{border:1px solid var(--rule);background:var(--panel);padding:26px;display:grid;gap:14px;align-content:start}
+.path.main{border-color:var(--bronze)}
+.path .who{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--bronze)}
+.path ul{margin:0;padding-inline-start:1.1em;display:grid;gap:5px;color:var(--bone-2);font-size:.94rem}
+.path .btn{justify-content:center}
+
+/* partners */
+.partners{position:relative;padding-block:0}
+.partners .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--rule)}
+@media (max-width:860px){.partners .wrap{grid-template-columns:1fr}}
+.partners .copy{padding:48px 40px;display:grid;gap:18px;align-content:center;background:var(--panel)}
+.partners .figs{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.partners .figs img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.stat{display:flex;gap:28px;flex-wrap:wrap}
+.stat div{display:grid}
+.stat strong{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:2.6rem;line-height:1;color:var(--bronze)}
+.stat span{font-size:.8rem;color:var(--bone-2)}
+
+/* faq */
+.faq{display:grid;gap:0;border-top:1px solid var(--rule);max-width:860px}
+details{border-bottom:1px solid var(--rule);padding:18px 0}
+summary{cursor:pointer;font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";color:var(--bronze);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"−"}
+details p{margin-top:10px;color:var(--bone-2)}
+
+/* final */
+.final{text-align:center;padding-block:110px;background:radial-gradient(ellipse at 50% 120%,#3a2414 0,var(--ground) 60%)}
+.final .wrap{display:grid;gap:22px;justify-items:center}
+.final h2{font-size:clamp(3rem,9vw,6.4rem)}
+.final h2 span{display:block;color:var(--bronze)}
+footer{border-top:1px solid var(--rule);padding-block:28px calc(28px + env(safe-area-inset-bottom,0px));font-size:.85rem;color:var(--bone-3)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+.demo-flag{position:fixed;inset-inline-end:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--bronze);color:#140d07;font:700 .72rem var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:6px 10px}
+
+/* ---- example 2 additions ---- */
+.hero2{padding-block:0}
+.hero2 .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;min-height:min(86vh,840px)}
+.hero2 .copy{padding-block:72px 64px;display:grid;gap:24px;align-content:end}
+.hero2 h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(3rem,8.4vw,6.6rem);line-height:.9}
+html[lang="ar"] .hero2 h1{font-size:clamp(2.4rem,6.6vw,4.6rem);line-height:1.2}
+.hero2 h1 em{font-style:normal;color:var(--bronze)}
+.hero2 .sub{font-size:1.18rem;color:var(--bone-2);max-width:44ch}
+.hero2 .img{align-self:stretch}
+.hero2 .img img{width:100%;height:100%;object-fit:cover;object-position:center 20%;mask-image:linear-gradient(to top,transparent 0,#000 18%);-webkit-mask-image:linear-gradient(to top,transparent 0,#000 18%)}
+@media (max-width:860px){.hero2 .wrap{grid-template-columns:1fr;min-height:0}.hero2 .img{order:-1;height:56vh;margin-inline:-20px}.hero2 .copy{padding-block:0 56px;margin-top:-80px;position:relative}}
+.tried{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:860px){.tried{grid-template-columns:1fr}}
+.tried div{border:1px solid var(--rule);background:var(--panel);padding:24px;display:grid;gap:8px}
+.tried s{color:var(--bone-2);font-weight:700;font-size:1.15rem;text-decoration-color:var(--bronze);text-decoration-thickness:2px}
+.tried p{font-size:.95rem;color:var(--bone-2)}
+.verdict{margin-top:32px;font-family:var(--display);font-weight:900;font-size:clamp(1.8rem,4.4vw,3rem);text-transform:uppercase;line-height:1}
+html[lang="ar"] .verdict{line-height:1.4}
+.verdict span{color:var(--bronze)}
+.weeks{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media (max-width:860px){.weeks{grid-template-columns:1fr}}
+.wk{background:var(--ground);padding:28px 24px;display:grid;gap:10px;align-content:start}
+.wk .when{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:2rem;line-height:1;color:var(--bronze)}
+.wk p{font-size:.95rem;color:var(--bone-2)}
+.wk ul{margin:0;padding-inline-start:1.1em;display:grid;gap:4px;font-size:.92rem;color:var(--bone-2)}
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.fit{grid-template-columns:1fr}}
+.fit div{padding:26px;border:1px solid var(--rule);display:grid;gap:12px;align-content:start}
+.fit .yes{border-color:var(--bronze);background:var(--panel)}
+.fit ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.fit li{display:grid;grid-template-columns:1.4rem 1fr;gap:8px;color:var(--bone-2)}
+.fit .yes li::before{content:"✓";color:var(--bronze);font-weight:700}
+.fit .no li::before{content:"✕";color:var(--bone-3);font-weight:700}
+.excuses{display:grid;gap:12px;max-width:900px}
+.excuse{display:grid;grid-template-columns:minmax(180px,.8fr) 1.2fr;gap:24px;border-bottom:1px solid var(--rule);padding-block:18px}
+@media (max-width:700px){.excuse{grid-template-columns:1fr;gap:6px}}
+.excuse q{font-family:var(--display);font-weight:800;font-size:1.6rem;line-height:1.05;text-transform:uppercase;quotes:"“" "”"}
+html[lang="ar"] .excuse q{line-height:1.4;font-size:1.3rem}
+.excuse p{color:var(--bone-2)}
+.excuse b{color:var(--bone)}
+.letter{max-width:720px;display:grid;gap:16px;font-size:1.08rem}
+.letter p{color:var(--bone-2)}
+.letter .sig{font-family:var(--display);font-weight:900;font-size:1.8rem;color:var(--bone);text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="mark" href="#top">DANGEROUSLY <b>CAPABLE</b></a>
+    <div class="links">
+      <a href="#why" data-i18n="nav1">Why it fails</a>
+      <a href="#results" data-i18n="nav2">Results</a>
+      <a href="#weeks" data-i18n="nav3">The 12 weeks</a>
+      <a href="#partners" data-i18n="nav4">Brand partners</a>
+    </div>
+    <button class="lang" id="lang" type="button" aria-label="Switch language">العربية</button>
+    <a class="btn" href="#assessment" data-i18n="navcta">Start free</a>
+  </div>
+</nav>
+
+<header class="hero2" id="top">
+  <div class="wrap">
+    <div class="copy">
+      <div class="eyebrow" data-i18n="h_eye">For people who've already tried</div>
+      <h1 data-i18n-html="h_h1">You don't need another plan. <em>You need someone who answers.</em></h1>
+      <p class="sub" data-i18n="h_sub">Most people quit in the first two weeks, when nobody explains anything. With me, those are the two weeks I'm there every day.</p>
+      <div class="ctas" style="display:flex;flex-wrap:wrap;gap:12px">
+        <a class="btn" href="#assessment" data-i18n="h_cta1">See where you're starting →</a>
+        <a class="btn ghost" href="#results" data-i18n="h_cta2">See the results first</a>
+      </div>
+      <p class="note" style="font-size:.85rem;color:var(--bone-3)" data-i18n="h_note">Free · 3 minutes · Abdelrahman Ayman, 10 years coaching</p>
+    </div>
+    <div class="img"><img src="img/studio-arms.jpg" alt="Abdelrahman Ayman" fetchpriority="high"></div>
+  </div>
+</header>
+
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="w_eye">Be honest</div>
+      <h2 data-i18n="w_h2">You've probably tried one of these</h2>
+    </div>
+    <div class="tried">
+      <div><s data-i18n="w1s">The 500-pound PDF</s><p data-i18n="w1p">Same plan as everyone else. No one to ask when a weight feels wrong or the scale stops moving.</p></div>
+      <div><s data-i18n="w2s">The app that counts for you</s><p data-i18n="w2p">It tracks everything and explains nothing. You follow it until life gets busy, then it's gone.</p></div>
+      <div><s data-i18n="w3s">The coach who goes quiet</s><p data-i18n="w3p">Fast replies while you're paying. "Yes" or "no" when you need the reason. Gone after the sale.</p></div>
+    </div>
+    <p class="verdict" data-i18n-html="w_v">None of them failed because you're lazy. <span>They failed because nobody taught you.</span></p>
+  </div>
+</section>
+
+<section class="fourteen">
+  <div class="wrap">
+    <div class="big">14</div>
+    <div class="inner">
+      <div class="eyebrow" data-i18n="f_eye">What's different</div>
+      <h2 data-i18n="f_h2">I'm loudest when you're most lost</h2>
+      <p data-i18n="f_p1">In your first 14 days you have a hundred questions: what to buy, how a movement should feel, why the plan says what it says. I answer every one on WhatsApp, with the whole reason, not one word.</p>
+      <p data-i18n="f_p2">By week three you're not following a plan anymore. You understand it.</p>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="r_eye">People with your excuses</div>
+      <h2 data-i18n="r_h2">They were busy too</h2>
+      <p class="muted" data-i18n="r_sub">A professor, a banker, an art director, a man working alone abroad, a woman who later became a mother. Drag each photo.</p>
+    </div>
+    <div class="results-grid" id="cases"></div>
+    <p class="results-foot" data-i18n="r_foot">Shared with each client's permission. Results depend on the person, the plan and the work.</p>
+  </div>
+</section>
+
+<section id="weeks">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="k_eye">The Dangerously Capable 12 weeks</div>
+      <h2 data-i18n="k_h2">What actually happens</h2>
+    </div>
+    <div class="weeks">
+      <div class="wk"><span class="when" data-i18n="k1w">Weeks 1–2</span><h3 data-i18n="k1h">You learn</h3><ul><li data-i18n="k1a">A deep call about your work, family, sleep and health</li><li data-i18n="k1b">Your training and nutrition built around that</li><li data-i18n="k1c">Daily WhatsApp with me while everything is new</li></ul></div>
+      <div class="wk"><span class="when" data-i18n="k2w">Weeks 3–8</span><h3 data-i18n="k2h">You build</h3><ul><li data-i18n="k2a">Weekly check-ins and adjustments</li><li data-i18n="k2b">We plan for travel, bad weeks and plateaus before they hit</li><li data-i18n="k2c">You start making the calls yourself</li></ul></div>
+      <div class="wk"><span class="when" data-i18n="k3w">Weeks 9–12</span><h3 data-i18n="k3h">You own it</h3><ul><li data-i18n="k3a">The visible change</li><li data-i18n="k3b">You know your calories, your cardio, your body</li><li data-i18n="k3c">You leave able to keep it, without a coach</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="x_eye">Straight answers</div>
+      <h2 data-i18n="x_h2">But…</h2>
+    </div>
+    <div class="excuses">
+      <div class="excuse"><q data-i18n="x1q">I'm too busy</q><p data-i18n-html="x1p"><b>Mohammad</b> works abroad and lives alone. <b>Dr Afifi</b> is a professor with no free hours. Both got there with short workouts built into the day they already had.</p></div>
+      <div class="excuse"><q data-i18n="x2q">I don't have a gym</q><p data-i18n-html="x2p"><b>Seif</b> did his 12 weeks at home in the 2020 lockdown with a pair of dumbbells: 15% less body fat, 5 kg more muscle.</p></div>
+      <div class="excuse"><q data-i18n="x3q">I've lost weight before and it came back</q><p data-i18n-html="x3p">That's why the goal is never a wedding or a holiday. <b>Nada</b> trained with me in 2021. Years later, as a mother, she still knows exactly how to look after herself.</p></div>
+      <div class="excuse"><q data-i18n="x4q">I'm worried about my health</q><p data-i18n-html="x4p"><b>Saeed</b> came in with high cholesterol and short breath. We worked on his nutrition and training, and his bloodwork came back in range. Where it matters, we work with medical specialists.</p></div>
+      <div class="excuse"><q data-i18n="x5q">Is this for women?</q><p data-i18n-html="x5p">Yes. <b>Sama</b> and <b>Nada</b> are two of many. Most women who train with me came through a friend who did it first.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="fit">
+      <div class="yes"><h3 data-i18n="fy">This is for you if</h3><ul><li data-i18n="fy1">You want a change that lasts, not a quick event cut</li><li data-i18n="fy2">You'll be honest with me about what you eat and do</li><li data-i18n="fy3">You want to understand your body, not just obey a plan</li><li data-i18n="fy4">You have a busy life and need a plan that fits it</li></ul></div>
+      <div class="no"><h3 data-i18n="fn">It's not for you if</h3><ul><li data-i18n="fn1">You want to lose 10 kg in time for the weekend</li><li data-i18n="fn2">You want a file to download and forget</li><li data-i18n="fn3">You'd rather hide the cake than tell me about it</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="assess" id="assessment">
+  <div class="wrap">
+    <div class="sec-head" style="margin:0">
+      <div class="eyebrow" data-i18n="a_eye">Free · 3 minutes</div>
+      <h2 data-i18n="a_h2">Find out where you're really starting</h2>
+      <p class="muted" data-i18n="a_sub">Four questions. You get your score and the path that fits your life. If it's the 12 weeks, I read your answers before we speak.</p>
+    </div>
+    <div class="quiz" id="quiz" aria-live="polite"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="letter">
+      <div class="eyebrow" data-i18n="l_eye">From me</div>
+      <p data-i18n="l1">I got the body I dreamed of at 20 and realised I had no idea how it happened. I spent the next ten years finding out: nutrition clinics, the gym floor, my own company, the stage in Cairo and Dubai.</p>
+      <p data-i18n="l2">I nearly left this industry when I saw how much of it is selling and running. I stayed because of people like Mostafa, Nada and Seif, who changed their whole lives, not just their bodies.</p>
+      <p data-i18n="l3">If you're ready to be honest and do the work, I'll be there for every question.</p>
+      <span class="sig">Abdelrahman</span>
+    </div>
+  </div>
+</section>
+
+<section class="partners" id="partners">
+  <div class="wrap">
+    <div class="copy">
+      <div class="eyebrow" data-i18n="b_eye">For brands</div>
+      <h2 data-i18n="b_h2">The face that out-reached Philips 25 to 1</h2>
+      <p class="muted" data-i18n="b_p">His Philips Middle East reel reached more than 3.3 million people, against the brand's own following of about 130,000. Mr Beard's biggest campaign posts are his face.</p>
+      <div class="stat"><div><strong>3.3M</strong><span>Philips Middle East</span></div><div><strong>261K</strong><span>Mr Beard campaign</span></div></div>
+      <a class="btn ghost" href="#" data-i18n="b_cta">Partnership enquiries →</a>
+    </div>
+    <div class="figs">
+      <img src="img/dubai-jetski.jpg" alt="Dubai, Burj Al Arab" decoding="async">
+      <img src="img/editorial.jpg" alt="Editorial portrait" decoding="async">
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 data-i18n-html="z_h2">Two weeks from now<span>you'll understand your body.</span></h2>
+    <p class="muted" data-i18n="z_p">Or you'll still be looking for the next plan. Your call.</p>
+    <a class="btn" href="#assessment" data-i18n="z_cta">Start the free assessment →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Dangerously Capable · Abdelrahman Ayman</span>
+    <span>Instagram @coach.boodi</span>
+  </div>
+</footer>
+
+<div class="demo-flag">Example 2 · draft</div>
+
+<script>
+const CASES=[
+ {k:"afifi",n:"Dr Afifi",m:"The professor",en:"“No time” was his reason. A nutrition plan that fit his days and short home workouts did the rest.",ar:"“مفيش وقت” كان عذره. خطة أكل على مقاس يومه وتمارين قصيرة في البيت عملوا الباقي."},
+ {k:"saeed",n:"Saeed",m:"Health first",en:"Came in for his cholesterol, not his abs. His bloodwork came back in range, and the shape followed.",ar:"جه عشان الكوليسترول مش عشان البطن. تحاليله رجعت طبيعية، والشكل جه وراها."},
+ {k:"sama",n:"Sama",m:"The art director",en:"Long, unpredictable days. Built muscle and lost fat without changing jobs.",ar:"أيام طويلة ومش متوقعة. كسبت عضل ونزلت دهون من غير ما تغيّر شغلها."},
+ {k:"bezo",n:"Mohamed “Bezo”",m:"4 weeks",en:"Never trained properly before. Four weeks on a plan built for him.",ar:"عمره ما اتمرن صح قبل كده. أربع أسابيع على خطة معمولة ليه."},
+ {k:"mohammad",n:"Mohammad",m:"Works abroad",en:"Living alone, working long hours. Short home workouts around a hectic day.",ar:"عايش لوحده وشغال ساعات طويلة. تمارين قصيرة في البيت وسط يوم مزحوم."},
+ {k:"abdullah",n:"Abdullah",m:"2 weeks",en:"Wanted to be ready for summer, fast. Two weeks.",ar:"كان عايز يبقى جاهز للصيف بسرعة. أسبوعين."},
+ {k:"seif",n:"Seif",m:"At home · 12 weeks",en:"No gym, a pair of dumbbells, lockdown. 15% less body fat, 5 kg more muscle.",ar:"من غير جيم، جوز دمبلز، لوكداون. ١٥٪ دهون أقل و٥ كيلو عضل زيادة."},
+ {k:"nada",n:"Nada",m:"12 weeks · years later",en:"Lost 20 kg. Became a mother. Still knows exactly what to eat.",ar:"نزلت ٢٠ كيلو. بقت أم. ولسه عارفة تاكل إيه بالظبط."},
+ {k:"mostafa",n:"Mostafa",m:"The banker · 6 months",en:"Was stuck on a plateau after losing weight alone. Six months later: a different body, and the confidence showed at work.",ar:"كان واقف عند البلاتو بعد ما خس لوحده. بعد ست شهور: جسم تاني، والثقة بانت في شغله."}
+];
+const grid=document.getElementById("cases");
+CASES.forEach(c=>{
+  const el=document.createElement("article");el.className="case";
+  el.innerHTML=`<div class="ba" style="--pos:50%"><img src="img/${c.k}-before.jpg" alt="${c.n} before" loading="lazy"><img class="after" src="img/${c.k}-after.jpg" alt="${c.n} after" loading="lazy"><span class="tag b">Before</span><span class="tag a">After</span><div class="handle"></div><input type="range" min="0" max="100" value="50" aria-label="Compare ${c.n} before and after"></div><div class="txt"><span class="meta">${c.m}</span><h3>${c.n}</h3><p data-en="${c.en.replace(/"/g,'&quot;')}" data-ar="${c.ar.replace(/"/g,'&quot;')}">${c.en}</p></div>`;
+  const ba=el.querySelector(".ba");el.querySelector("input").addEventListener("input",e=>ba.style.setProperty("--pos",e.target.value+"%"));
+  grid.appendChild(el);
+});
+const Q=[
+ {q:{en:"Which one sounds most like you?",ar:"أنهي واحدة شبهك أكتر؟"},o:[["quit","I start strong, then quit","ببدأ قوي وبعدين بوقف"],["plateau","I'm stuck and nothing moves","أنا واقف ومفيش حاجة بتتحرك"],["new","I've never trained properly","عمري ما اتمرنت صح"],["health","My health is the real reason","صحتي هي السبب الحقيقي"]]},
+ {q:{en:"Where will you train?",ar:"هتتمرن فين؟"},o:[["gym","Gym","جيم"],["home","Home","البيت"],["mix","Both / travelling","الاتنين / مسافر"]]},
+ {q:{en:"How many days a week, honestly?",ar:"كام يوم في الأسبوع، بصراحة؟"},o:[["2","2 or less","يومين أو أقل"],["3","3–4","٣–٤"],["5","5+","٥ أو أكتر"]]},
+ {q:{en:"What would actually keep you going?",ar:"إيه اللي هيخليك تكمّل بجد؟"},o:[["self","A clear plan, I'll do the rest","خطة واضحة والباقي عليا"],["coach","Someone answering me every day","حد يرد عليا كل يوم"],["elite","Everything, in person if possible","كل حاجة، ولو ينفع وجهاً لوجه"]]}
+];
+let step=0,ans={},lang="en";const quiz=document.getElementById("quiz");
+function render(){
+  if(step<Q.length){const q=Q[step];
+    quiz.innerHTML=`<div class="bar"><i style="width:${(step/Q.length)*100}%"></i></div><div class="small">${lang==="ar"?"سؤال":"Question"} ${step+1} / ${Q.length}</div><div class="q">${q.q[lang]}</div><div class="opts">${q.o.map(o=>`<button class="opt" type="button" data-v="${o[0]}">${lang==="ar"?o[2]:o[1]}</button>`).join("")}</div>`;
+    quiz.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{ans[step]=b.dataset.v;step++;render();});
+  }else{
+    const score=Math.min(92,48+({"2":4,"3":12,"5":18}[ans[2]]||0)+({gym:10,home:6,mix:8}[ans[1]]||0)+({coach:12,elite:14,self:4}[ans[3]]||0));
+    const why={quit:{en:"You don't lack discipline. You lacked answers in the first two weeks.",ar:"إنت مش ناقصك التزام. كان ناقصك إجابات في أول أسبوعين."},plateau:{en:"Plateaus are where most people need a second pair of eyes, not more effort.",ar:"البلاتو هو المكان اللي أغلب الناس محتاجة فيه عين تانية، مش مجهود زيادة."},new:{en:"Starting from zero is an advantage. No bad habits to undo.",ar:"البداية من الصفر ميزة. مفيش عادات وحشة نصلحها."},health:{en:"Health-first is the right order. We start with how you feel, then how you look.",ar:"الصحة الأول هو الترتيب الصح. نبدأ بإحساسك، وبعدين شكلك."}}[ans[0]][lang];
+    const path=ans[3]==="elite"?(lang==="ar"?"إيليت — بالتقديم":"Elite — by application"):ans[3]==="coach"?(lang==="ar"?"برنامج الـ١٢ أسبوع":"The 12-week programme"):(lang==="ar"?"تبدأ مجاناً — والخطة الذاتية":"Start free, then self-led");
+    quiz.innerHTML=`<div class="bar"><i style="width:100%"></i></div><div class="result"><div class="small">${lang==="ar"?"نقطة البداية بتاعتك":"Your starting score"}</div><div class="score">${score}</div><p>${why}</p><div class="path"><div class="small">${lang==="ar"?"الطريق المناسب ليك":"Your path"}</div><strong>${path}</strong></div><button class="btn ghost" type="button" id="again">${lang==="ar"?"ابدأ من الأول":"Start again"}</button></div>`;
+    document.getElementById("again").onclick=()=>{step=0;ans={};render();};
+  }
+}
+render();
+const AR={nav1:"ليه بيفشل",nav2:"النتايج",nav3:"الـ١٢ أسبوع",nav4:"للبراندات",navcta:"ابدأ مجاناً",
+h_eye:"للناس اللي جربت قبل كده",h_h1:"إنت مش محتاج خطة تانية. <em>إنت محتاج حد يرد عليك.</em>",h_sub:"أغلب الناس بتوقف في أول أسبوعين، لما محدش بيشرحلهم حاجة. معايا، الأسبوعين دول أنا موجود فيهم كل يوم.",h_cta1:"اعرف إنت بادئ منين ←",h_cta2:"شوف النتايج الأول",h_note:"مجاني · ٣ دقايق · عبد الرحمن أيمن، ١٠ سنين كوتشينج",
+w_eye:"بصراحة",w_h2:"غالباً جربت واحدة من دول",w1s:"الـPDF أبو ٥٠٠ جنيه",w1p:"نفس الخطة اللي مع الكل. مفيش حد تسأله لما وزن يحس غلط أو الميزان يقف.",w2s:"الأبلكيشن اللي بيعد عنك",w2p:"بيسجل كل حاجة وما بيشرحش أي حاجة. بتمشي عليه لحد ما الحياة تتزحم، وبعدين بيختفي.",w3s:"الكوتش اللي بيختفي",w3p:"ردود سريعة وإنت بتدفع. “آه” أو “لأ” لما تكون محتاج السبب. وبعد البيع، مش موجود.",w_v:"ولا واحدة فيهم فشلت عشان إنت كسلان. <span>فشلت عشان محدش علمك.</span>",
+f_eye:"إيه المختلف",f_h2:"أنا بكون أعلى صوت لما إنت تكون تايه أكتر",f_p1:"في أول ١٤ يوم عندك ميت سؤال: تشتري إيه، الحركة المفروض تحس بيها إزاي، ليه الخطة بتقول كده. برد على كل واحد على الواتساب، بالسبب كله مش بكلمة.",f_p2:"في الأسبوع التالت إنت مش ماشي على خطة. إنت فاهمها.",
+r_eye:"ناس عندها نفس أعذارك",r_h2:"هما كمان كانوا مشغولين",r_sub:"دكتور جامعة، بانكر، آرت دايركتور، راجل شغال لوحده برا، وست بقت أم بعدها. اسحب كل صورة.",r_foot:"منشورة بإذن كل عميل. النتايج بتختلف حسب الشخص والخطة والمجهود.",
+k_eye:"الـ١٢ أسبوع بتوع دينجرسلي كيبابل",k_h2:"اللي بيحصل فعلاً",k1w:"أسبوع ١–٢",k1h:"بتتعلم",k1a:"مكالمة عميقة عن شغلك وعيلتك ونومك وصحتك",k1b:"تمرينك وأكلك معمولين على ده",k1c:"واتساب يومي معايا وكل حاجة لسه جديدة",k2w:"أسبوع ٣–٨",k2h:"بتبني",k2a:"متابعة وتعديلات كل أسبوع",k2b:"بنخطط للسفر والأسابيع الوحشة والبلاتو قبل ما ييجوا",k2c:"بتبدأ تاخد القرارات بنفسك",k3w:"أسبوع ٩–١٢",k3h:"بتمتلكها",k3a:"التغيير اللي بيبان",k3b:"بتعرف سعراتك والكارديو وجسمك",k3c:"بتمشي وإنت قادر تحافظ عليه من غير كوتش",
+x_eye:"إجابات على طول",x_h2:"بس…",x1q:"أنا مشغول جداً",x1p:"<b>محمد</b> شغال برا وعايش لوحده. <b>دكتور عفيفي</b> دكتور جامعة ومعندوش ساعة فاضية. الاتنين وصلوا بتمارين قصيرة جوه اليوم اللي عندهم أصلاً.",x2q:"معنديش جيم",x2p:"<b>سيف</b> عمل الـ١٢ أسبوع في البيت في لوكداون ٢٠٢٠ بجوز دمبلز: ١٥٪ دهون أقل، و٥ كيلو عضل زيادة.",x3q:"خسيت قبل كده ورجع تاني",x3p:"عشان كده الهدف عمره ما بيكون فرح أو أجازة. <b>ندى</b> اتمرنت معايا سنة ٢٠٢١. وبعد سنين، وهي أم، لسه عارفة تتعامل مع نفسها إزاي.",x4q:"أنا قلقان على صحتي",x4p:"<b>سعيد</b> جه بكوليسترول عالي ونهجان. اشتغلنا على أكله وتمرينه، وتحاليله رجعت طبيعية. ولما يفرق، بنشتغل مع أخصائيين.",x5q:"ده للستات؟",x5p:"أيوه. <b>سما</b> و<b>ندى</b> اتنين من كتير. أغلب الستات اللي اتمرنوا معايا جم عن طريق صاحبة جربت الأول.",
+fy:"ده ليك لو",fy1:"عايز تغيير يفضل، مش تنشيف سريع لمناسبة",fy2:"هتكون صريح معايا في أكلك واللي بتعمله",fy3:"عايز تفهم جسمك، مش بس تنفذ خطة",fy4:"حياتك مزحومة ومحتاج خطة على مقاسها",fn:"مش ليك لو",fn1:"عايز تنزل ١٠ كيلو قبل الويك إند",fn2:"عايز ملف تنزله وتنساه",fn3:"تفضل تخبي الكيكة على إنك تقولي عليها",
+a_eye:"مجاني · ٣ دقايق",a_h2:"اعرف إنت بادئ منين بجد",a_sub:"أربع أسئلة. هتاخد نتيجتك والطريق اللي يناسب حياتك. ولو كان الـ١٢ أسبوع، هقرا إجاباتك قبل ما نتكلم.",
+l_eye:"مني",l1:"وصلت للجسم اللي كنت بحلم بيه وأنا عندي ٢٠ واكتشفت إني مش فاهم ده حصل إزاي. قضيت العشر سنين اللي بعدها بعرف: عيادات تغذية، الجيم، شركتي، والاستيدج في القاهرة ودبي.",l2:"كنت قربت أسيب المجال ده لما شفت قد إيه هو بيع وهروب. فضلت عشان ناس زي مصطفى وندى وسيف، اللي غيّروا حياتهم كلها مش بس جسمهم.",l3:"لو إنت جاهز تكون صريح وتشتغل، هكون موجود لكل سؤال.",
+b_eye:"للبراندات",b_h2:"الوش اللي وصل لناس أكتر من فيليبس ٢٥ مرة",b_p:"ريل فيليبس الشرق الأوسط بتاعه وصل لأكتر من ٣.٣ مليون شخص، قصاد متابعين البراند اللي حوالي ١٣٠ ألف. أكبر بوستات حملات مستر بيرد هي وشه.",b_cta:"للتعاون ←",
+z_h2:"بعد أسبوعين من دلوقتي<span>هتكون فاهم جسمك.</span>",z_p:"أو هتكون لسه بتدور على الخطة اللي بعدها. القرار ليك.",z_cta:"ابدأ التقييم المجاني ←"};
+const EN={};document.querySelectorAll("[data-i18n]").forEach(e=>EN[e.dataset.i18n]=e.textContent);document.querySelectorAll("[data-i18n-html]").forEach(e=>EN[e.dataset.i18nHtml]=e.innerHTML);
+document.getElementById("lang").onclick=()=>{
+  lang=lang==="en"?"ar":"en";const d=lang==="ar"?AR:EN;
+  document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+  document.querySelectorAll("[data-i18n]").forEach(e=>{const v=d[e.dataset.i18n];if(v)e.textContent=v});
+  document.querySelectorAll("[data-i18n-html]").forEach(e=>{const v=d[e.dataset.i18nHtml];if(v)e.innerHTML=v});
+  document.querySelectorAll("[data-en]").forEach(e=>e.textContent=e.dataset[lang]);
+  document.getElementById("lang").textContent=lang==="ar"?"English":"العربية";
+  render();
+};
+</script>
+</body>
+</html>
