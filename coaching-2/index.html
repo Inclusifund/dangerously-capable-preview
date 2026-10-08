@@ -252,7 +252,7 @@ html[lang="ar"] .excuse q{line-height:1.4;font-size:1.3rem;quotes:"«" "»"}
         <a class="btn" href="#assessment" data-i18n="h_cta1">See where you're starting →</a>
         <a class="btn ghost" href="#results" data-i18n="h_cta2">See the results first</a>
       </div>
-      <p class="note" style="font-size:.85rem;color:var(--bone-3)" data-i18n="h_note">Free · 3 minutes · Abdelrahman Ayman, 10 years coaching</p>
+      <p class="note" id="hnote" style="font-size:.85rem;color:var(--bone-3)" data-i18n="h_note">Free · 3 minutes · Abdelrahman Ayman, 10 years coaching</p>
     </div>
     <div class="img"><img src="img/studio-arms.jpg" alt="Abdelrahman Ayman" fetchpriority="high"></div>
   </div>
@@ -290,7 +290,7 @@ html[lang="ar"] .excuse q{line-height:1.4;font-size:1.3rem;quotes:"«" "»"}
     <div class="sec-head">
       <div class="eyebrow" data-i18n="r_eye">People with your excuses</div>
       <h2 data-i18n="r_h2">They were busy too</h2>
-      <p class="muted" data-i18n="r_sub">A professor, a banker, an art director, a man working alone abroad, a woman who later became a mother. Drag each photo.</p>
+      <p class="muted" data-i18n="r_sub">A professor, a banker, an art director, an engineer living alone abroad, and a doctor who later became a mother. Drag each photo.</p>
     </div>
     <div class="results-grid" id="cases"></div>
     <p class="results-foot" data-i18n="r_foot">Shared with each client's permission. Results depend on the person, the plan and the work.</p>
@@ -318,10 +318,10 @@ html[lang="ar"] .excuse q{line-height:1.4;font-size:1.3rem;quotes:"«" "»"}
       <h2 data-i18n="x_h2">But…</h2>
     </div>
     <div class="excuses">
-      <div class="excuse"><q data-i18n="x1q">I'm too busy</q><p data-i18n-html="x1p"><b>Mohammad</b> works abroad and lives alone. <b>Dr Afifi</b> is a professor with no free hours. Both got there with short workouts built into the day they already had.</p></div>
+      <div class="excuse"><q data-i18n="x1q">I'm too busy</q><p data-i18n-html="x1p"><b>Mohammad</b>, an engineer, works abroad and lives alone. <b>Dr Afifi</b> is a professor with no free hours. Both got there with short workouts built into the day they already had.</p></div>
       <div class="excuse"><q data-i18n="x2q">I don't have a gym</q><p data-i18n-html="x2p"><b>Seif</b> did his 12 weeks at home in the 2020 lockdown with a pair of dumbbells: 15% less body fat, 5 kg more muscle.</p></div>
       <div class="excuse"><q data-i18n="x3q">I've lost weight before and it came back</q><p data-i18n-html="x3p">That's why the goal is never a wedding or a holiday. <b>Nada</b> trained with me in 2021. Years later, as a mother, she still knows exactly how to look after herself.</p></div>
-      <div class="excuse"><q data-i18n="x4q">I'm worried about my health</q><p data-i18n-html="x4p"><b>Saeed</b> came in with high cholesterol and short breath. We worked on his nutrition and training, and his bloodwork came back in range. Where it matters, we work with medical specialists.</p></div>
+      <div class="excuse"><q data-i18n="x4q">I'm worried about my health</q><p data-i18n-html="x4p"><b>Mr Sayed</b> came in with high cholesterol and short breath. We worked on his nutrition and training, and his bloodwork came back in range. Where it matters, we work with medical specialists.</p></div>
       <div class="excuse"><q data-i18n="x5q">Is this for women?</q><p data-i18n-html="x5p">Yes. <b>Sama</b> and <b>Nada</b> are two of many. Most women who train with me came through a friend who did it first.</p></div>
     </div>
   </div>
@@ -395,13 +395,13 @@ html[lang="ar"] .excuse q{line-height:1.4;font-size:1.3rem;quotes:"«" "»"}
 <script>
 const CASES=[
  {k:"afifi",n:"Dr Afifi",nA:"دكتور عفيفي",m:"The professor",mA:"الدكتور الجامعي",en:"“No time” was his reason. A nutrition plan that fit his days and short home workouts did the rest.",ar:"حجّته كانت «مش فاضي». أكل ماشي مع يومه وتمرين قصير في البيت، والباقي باين في الصورة."},
- {k:"saeed",n:"Saeed",nA:"سعيد",m:"Health first",mA:"الصحة الأول",en:"Came in for his cholesterol, not his abs. His bloodwork came back in range, and the shape followed.",ar:"جالي عشان الكوليسترول، مش عشان البطن. التحاليل رجعت طبيعية، والشكل جه لوحده."},
- {k:"sama",n:"Sama",nA:"سما",m:"The art director",mA:"الآرت دايركتور",en:"Long, unpredictable days. Built muscle and lost fat without changing jobs.",ar:"شغلها مالوش مواعيد. كسبت عضل ونزّلت دهون من غير ما تسيب ولا يوم شغل."},
+ {k:"saeed",n:"Mr Sayed",nA:"مستر سيد",m:"Health first",mA:"الصحة الأول",en:"Came in for his cholesterol, not his abs. His bloodwork came back in range, and the shape followed.",ar:"جالي عشان الكوليسترول، مش عشان البطن. التحاليل رجعت طبيعية، والشكل جه لوحده."},
+ {k:"sama",n:"Sama",nA:"سما",m:"The art director",mA:"المخرجة",en:"Long, unpredictable days. Built muscle and lost fat without changing jobs.",ar:"شغلها مالوش مواعيد. ظبطت جسمها وزادت عضل ونزلت دهون من غير ما تسيب ولا يوم شغل."},
  {k:"bezo",n:"Mohamed “Bezo”",nA:"محمد «بيزو»",m:"4 weeks",mA:"٤ أسابيع",en:"Never trained properly before. Four weeks on a plan built for him.",ar:"عمره ما اتمرّن صح. أربع أسابيع على خطة متفصّلة عليه."},
- {k:"mohammad",n:"Mohammad",nA:"محمد",m:"Works abroad",mA:"شغّال برّه",en:"Living alone, working long hours. Short home workouts around a hectic day.",ar:"عايش لوحده برّه وشغله مالوش آخر. تمرين قصير في البيت وسط اليوم المزحوم."},
+ {k:"mohammad",n:"Mohammad",nA:"محمد",m:"Engineer abroad",mA:"مهندس في الغربة",en:"Living alone, working long hours. Short home workouts around a hectic day.",ar:"عايش لوحده برّه وشغله مالوش آخر. تمرين قصير في البيت وسط اليوم المزحوم."},
  {k:"abdullah",n:"Abdullah",nA:"عبدالله",m:"2 weeks",mA:"أسبوعين",en:"Wanted to be ready for summer, fast. Two weeks.",ar:"كان عايز يلحق الصيف. أسبوعين بس."},
- {k:"seif",n:"Seif",nA:"سيف",m:"At home · 12 weeks",mA:"في البيت · ١٢ أسبوع",en:"No gym, a pair of dumbbells, lockdown. 15% less body fat, 5 kg more muscle.",ar:"لا جيم ولا أجهزة: جوز دمبلز وأيام اللوكداون. ١٥٪ دهون أقل و٥ كيلو عضل زيادة."},
- {k:"nada",n:"Nada",nA:"ندى",m:"12 weeks · years later",mA:"١٢ أسبوع · وبعدها بسنين",en:"Lost 20 kg. Became a mother. Still knows exactly what to eat.",ar:"نزلت ٢٠ كيلو. بقت أم. ولسه عارفة تاكل إيه بالظبط."},
+ {k:"seif",n:"Seif",nA:"سيف",m:"At home · 12 weeks",mA:"في البيت · ١٢ أسبوع",en:"No gym, a pair of dumbbells, lockdown. 15% less body fat, 5 kg more muscle.",ar:"لا جيم ولا أجهزة، دمبلز وأيام الكورونا. ١٥٪ دهون أقل و٥ كيلو عضل زيادة."},
+ {k:"nada",n:"Nada",nA:"الدكتورة والأم ندى",m:"Doctor and mother · 12 weeks",mA:"١٢ أسبوع · وبعدها بسنين",en:"Lost 20 kg. Became a mother. Still knows exactly what to eat.",ar:"نزلت ٢٠ كيلو. بقت أم. ولسه عارفة تاكل إيه بالظبط."},
  {k:"mostafa",n:"Mostafa",nA:"مصطفى",m:"The banker · 6 months",mA:"البانكر · ٦ شهور",en:"Was stuck on a plateau after losing weight alone. Six months later: a different body, and the confidence showed at work.",ar:"كان واقف عند البلاتو بعد ما خسّ لوحده. بعد ٦ شهور: جسم تاني، وثقة بانت حتى في شغله."}
 ];
 const q_=s=>s.replace(/"/g,'&quot;');
@@ -413,7 +413,7 @@ CASES.forEach(c=>{
   grid.appendChild(el);
 });
 const Q=[
- {q:{en:"Which one sounds most like you?",ar:"أنهي واحدة فيهم إنت؟"},o:[["quit","I start strong, then quit","ببدأ بحماس… وبعدين بفصل"],["plateau","I'm stuck and nothing moves","واقف مكاني ومفيش حاجة بتتحرك"],["new","I've never trained properly","عمري ما اتمرّنت صح"],["health","My health is the real reason","صحتي هي السبب الحقيقي"]]},
+ {q:{en:"Which one sounds most like you?",ar:"إنت أنهي واحدة فيهم؟"},o:[["quit","I start strong, then quit","ببدأ بحماس… وبعدين بفصل"],["plateau","I'm stuck and nothing moves","واقف مكاني ومفيش حاجة بتتحرك"],["new","I've never trained properly","عمري ما اتمرّنت صح"],["health","My health is the real reason","صحتي هي السبب الحقيقي"]]},
  {q:{en:"Where will you train?",ar:"هتتمرّن فين؟"},o:[["gym","Gym","الجيم"],["home","Home","البيت"],["mix","Both / travelling","الاتنين / بسافر كتير"]]},
  {q:{en:"How many days a week, honestly?",ar:"كام يوم في الأسبوع… بصراحة؟"},o:[["2","2 or less","يومين أو أقل"],["3","3–4","٣ لـ٤"],["5","5+","٥ أو أكتر"]]},
  {q:{en:"What would actually keep you going?",ar:"إيه اللي هيخلّيك تكمّل المرة دي؟"},o:[["self","A clear plan, I'll do the rest","خطة واضحة والباقي عليّا"],["coach","Someone answering me every day","حد يرد عليّا كل يوم"],["elite","Everything, in person if possible","كل حاجة، ولو ينفع وش لوش"]]}
@@ -434,16 +434,16 @@ function render(){
 }
 render();
 const AR={nav1:"ليه مش بينفع",nav2:"النتايج",nav3:"الـ١٢ أسبوع",nav4:"للبراندات",navcta:"ابدأ ببلاش",
-h_eye:"للي جرّب قبل كده… ومنفعش",h_h1:"مش ناقصك خطة. <em>ناقصك حد يرد عليك.</em>",h_sub:"أغلب الناس بتفصل في أول أسبوعين. مش عشان كسلانين، عشان محدش بيشرحلهم حاجة. وأنا في الأسبوعين دول بالذات، معاك يوم بيوم.",h_cta1:"شوف إنت واقف فين ←",h_cta2:"وريني النتايج الأول",h_note:"ببلاش · ٣ دقايق · عبد الرحمن أيمن، ١٠ سنين كوتشينج",
-w_eye:"خلّينا صرحاء",w_h2:"أكيد جرّبت حاجة من دول",w1s:"الـPDF أبو ٥٠٠ جنيه",w1p:"نفس الورقة اللي اتبعتت لألف واحد قبلك. وأول ما الميزان يقف، مش لاقي حد تسأله.",w2s:"الأبلكيشن اللي بيعدّ عليك",w2p:"بيسجّل كل لقمة ومش بيقولك ليه. أول أسبوع زحمة في الشغل… وخلاص، بقى أيقونة على الموبايل.",w3s:"الكوتش اللي بيختفي",w3p:"بيرد في ثانية وإنت لسه بتدفع. بعدها «تمام» و«لأ» من غير أي شرح. وبعد التجديد؟ فص ملح وداب.",w_v:"المشكلة عمرها ما كانت فيك. <span>المشكلة إن محدش علّمك.</span>",
+h_eye:"للي جرّب قبل كده… ومنفعش",h_h1:"انت مش ناقصك خطة. <em>انت ناقصك مدرب يبقى معاك بجد.</em>",h_sub:"أغلب الناس بتوقف في أول أسبوعين. مش عشان مفيش إرادة، عشان محدش بيخطط ويتابع ويشرح. وأنا في الأسبوعين دول بالذات، ببقى معاك يوم بيوم.",h_cta1:"نقطة البداية ←",h_cta2:"نتايج العملاء",h_note:"ببلاش · ٣ دقايق · عبد الرحمن أيمن، ١٠ سنين كوتشينج",
+w_eye:"خلّينا صرحاء",w_h2:"أكيد شوفت كتير من الحاجات دي:",w1s:"الـPDF أبو ٥٠٠ جنيه",w1p:"نفس الورقة اللي اتبعتت لألف واحد قبلك. وأول ما الميزان يقف أو مش فاهم جسمك في التمرين، مفيش حد تسأله.",w2s:"الأبلكيشن اللي بيعدّ عليك",w2p:"بيسجّل كل لقمة ومش بيقولك ليه. أول أسبوع زحمة في الشغل… وخلاص، بقى مجرد لوجو على موبايلك.",w3s:"الكوتش اللي بيختفي",w3p:"بيرد في ثانية وإنت لسه بتدفع. بعدها «تمام» و«لأ» من غير أي شرح. وبعد أسبوع؟ فص ملح وداب.",w_v:"المشكلة عمرها ما كانت فيك. <span>المشكلة إن محدش علّمك.</span>",
 f_eye:"الفرق كله هنا",f_h2:"لما تبقى تايه، أنا أقرب واحد ليك",f_p1:"أول ١٤ يوم بيبقى في دماغك ميت سؤال: أشتري إيه؟ الحركة دي المفروض أحسّها فين؟ ليه الخطة بتقول كده؟ كل سؤال بيوصلني على الواتساب، وبرد بالسبب كله، مش «آه» ولا «لأ».",f_p2:"وعلى الأسبوع التالت، مش هتبقى ماشي ورا خطة. هتبقى فاهمها.",
-r_eye:"ناس كان عندها نفس أعذارك",r_h2:"وكانوا مشغولين برضه",r_sub:"دكتور جامعة، بانكر، آرت دايركتور، واحد عايش لوحده برّه مصر، وواحدة بقت أم بعدها. اسحب أي صورة وشوف.",r_foot:"منشورة بإذن كل واحد فيهم. النتيجة بتفرق حسب الشخص والخطة والالتزام.",
-k_eye:"الـ١٢ أسبوع من جوّه",k_h2:"إيه اللي بيحصل بالظبط",k1w:"أسبوع ١–٢",k1h:"بتفهم",k1a:"مكالمة طويلة عن شغلك وبيتك ونومك وصحتك",k1b:"تمرين وأكل متفصّلين على حياتك إنت",k1c:"واتساب كل يوم وكل حاجة لسه جديدة عليك",k2w:"أسبوع ٣–٨",k2h:"بتبني",k2a:"متابعة كل أسبوع وتعديل على طول",k2b:"بنحسب حساب السفر والأسبوع الوحش والبلاتو قبل ما يحصلوا",k2c:"وبتبدأ تاخد قراراتك لوحدك",k3w:"أسبوع ٩–١٢",k3h:"بقت بتاعتك",k3a:"التغيير اللي الناس بتلاحظه",k3b:"عارف سعراتك وكارديوك وجسمك",k3c:"وبتخرج قادر تكمّل من غيري",
-x_eye:"على المكشوف",x_h2:"بس يا كوتش…",x1q:"أنا مش فاضي",x1p:"<b>محمد</b> شغّال برّه وعايش لوحده. <b>دكتور عفيفي</b> دكتور جامعة ويومه مليان. الاتنين وصلوا بتمرين قصير جوّه نفس اليوم اللي عندهم.",x2q:"معنديش جيم",x2p:"<b>سيف</b> عمل الـ١٢ أسبوع كلهم في البيت أيام لوكداون ٢٠٢٠، بجوز دمبلز: ١٥٪ دهون أقل و٥ كيلو عضل زيادة.",x3q:"خسّيت قبل كده والوزن رجع",x3p:"عشان كده عمري ما بشتغل على فرح أو مصيف. <b>ندى</b> اتمرّنت معايا سنة ٢٠٢١، وبعدها بسنين، وهي أم، لسه عارفة تظبط نفسها.",x4q:"خايف على صحتي",x4p:"<b>سعيد</b> جالي بكوليسترول عالي ونَفَس مقطوع. ظبطنا أكله وتمرينه، وتحاليله رجعت طبيعية. ولما الموضوع يحتاج دكتور، بنشتغل مع متخصصين.",x5q:"ينفع للبنات؟",x5p:"أكيد. <b>سما</b> و<b>ندى</b> اتنين من كتير. وأغلب البنات اللي اتمرّنوا معايا جم عن طريق صاحبتهم اللي جرّبت الأول.",
+r_eye:"الناس دي كان عندها نفس أعذارك",r_h2:"وكانوا مشغولين برضه",r_sub:"دكتور جامعة، موظف بنك، مخرجة، مهندس عايش لوحده برّه مصر، ودكتورة بقت أم بعدها. اسحب أي صورة وشوف.",r_foot:"الصور منشورة بإذن كل واحد فيهم. النتيجة بتفرق حسب الشخص والخطة والالتزام.",
+k_eye:"الـ١٢ أسبوع من جوّه",k_h2:"إيه تفاصيل الـ١٢ أسبوع بقى؟",k1w:"أسبوع ١–٢",k1h:"بتفهم",k1a:"مكالمة طويلة عن شغلك وبيتك ونومك وصحتك",k1b:"تمرين وأكل متفصّلين على حياتك إنت",k1c:"واتساب كل يوم وكل حاجة لسه جديدة عليك",k2w:"أسبوع ٣–٨",k2h:"بتبني",k2a:"متابعة كل أسبوع وتعديل على طول",k2b:"بنحسب حساب السفر والأسبوع الوحش والبلاتو قبل ما يحصلوا",k2c:"وبتبدأ تاخد قراراتك لوحدك",k3w:"أسبوع ٩–١٢",k3h:"بقت بتاعتك",k3a:"التغيير اللي الناس بتلاحظه",k3b:"عارف سعراتك وتمرينك وجسمك",k3c:"وبتخلص معايا قادر تكمّل من غيري",
+x_eye:"على المكشوف",x_h2:"بس يا كوتش…",x1q:"أنا مش فاضي",x1p:"<b>محمد</b> شغّال برّه وعايش لوحده. <b>دكتور عفيفي</b> دكتور جامعة ويومه مليان. الاتنين وصلوا بتمرين قصير جوّه نفس اليوم اللي عندهم.",x2q:"معنديش جيم",x2p:"<b>سيف</b> عمل الـ١٢ أسبوع كلهم في البيت أيام كورونا ٢٠٢٠، بدمبلز بس: ١٥٪ دهون أقل و٥ كيلو عضل زيادة.",x3q:"خسّيت قبل كده والوزن رجع",x3p:"عشان كده عمري ما بشتغل على فرح أو مصيف. <b>ندى</b> اتمرّنت معايا سنة ٢٠٢١، وبعدها بسنين، وهي أم، لسه عارفة تظبط نفسها.",x4q:"خايف على صحتي",x4p:"<b>أستاذ سيد</b> جالي بكوليسترول عالي ونَفَس مقطوع. ظبطنا أكله وتمرينه، وتحاليله رجعت طبيعية. ولما الموضوع يحتاج دكتور، بنشتغل مع متخصصين.",x5q:"ينفع للبنات؟",x5p:"أكيد. <b>سما</b> و<b>ندى</b> اتنين من كتير. وأغلب البنات اللي اتمرّنوا معايا جم عن طريق صاحبتهم اللي جرّبت الأول.",
 fy:"ده ليك لو…",fy1:"عايز تغيير يعيش، مش تنشيف على مناسبة",fy2:"هتبقى صريح معايا في أكلك ونومك وكل حاجة",fy3:"عايز تفهم جسمك، مش تنفّذ وخلاص",fy4:"حياتك زحمة ومحتاج خطة تمشي معاها",fn:"ومش ليك لو…",fn1:"عايز تنزل ١٠ كيلو قبل الخميس",fn2:"عايز ملف تنزّله وتنساه",fn3:"هتخبّي حتة الجاتوه بدل ما تقولّي عليها",
 a_eye:"ببلاش · ٣ دقايق",a_h2:"اعرف إنت بادئ منين بجد",a_sub:"٤ أسئلة بس. هتطلعلك نتيجتك والطريق اللي يناسب حياتك. ولو طلعت مناسب للـ١٢ أسبوع، هقرا إجاباتك قبل ما نتكلم.",
-l_eye:"مني ليك",l1:"وصلت للجسم اللي كنت بحلم بيه وأنا عندي ٢٠ سنة، واكتشفت إني مش فاهم ده حصل إزاي. فقضيت العشر سنين اللي بعدها بدوّر: عيادات تغذية، أرض الجيم، شركتي الأونلاين، والاستيدج في القاهرة ودبي.",l2:"وكنت قرّبت أسيب المجال كله لما شفت إن أغلبه بيع وجري. فضلت عشان ناس زي مصطفى وندى وسيف، اللي حياتهم كلها اتغيّرت، مش جسمهم بس.",l3:"لو إنت جاهز تبقى صريح وتشتغل، أنا موجود لكل سؤال.",
-b_eye:"للبراندات",b_h2:"الوش اللي وصل لناس أكتر من فيليبس نفسها ٢٥ مرة",b_p:"ريل فيليبس الشرق الأوسط وصل لأكتر من ٣٫٣ مليون شخص، والبراند نفسه متابعينه حوالي ١٣٠ ألف. وأكبر بوستات مستر بيرد؟ وشّه هو.",b_cta:"للتعاون ←",
+l_eye:"مني ليك",l1:"وصلت للجسم اللي كنت بحلم بيه وأنا عندي ٢٠ سنة، واكتشفت إني مش فاهم ده حصل إزاي ومش عارف أتحسن أكتر. فقضيت العشر سنين اللي بعدها ما بين المذاكرة والشهادات، عيادات تغذية، تدريب شخصي في الچيم، شركتي للتدريب الأونلاين، والمنافسة في كمال الأجسام في القاهرة ودبي.",l2:"وكنت قرّبت أسيب المجال كله لما شفت إن أغلبه بيع وجري أو كروت. فضلت عشان ناس زي مصطفى وندى وسيف، اللي حياتهم كلها اتغيّرت، مش جسمهم بس.",l3:"لو إنت جاهز تبقى صريح وتشتغل، أنا موجود لكل سؤال.",
+b_eye:"للشركات والبراندات",b_h2:"الوجه الإعلامي اللي وصل لناس أكتر من متابعين فيليبس نفسها ٢٥ مرة",b_p:"ريل فيليبس الشرق الأوسط وصل لأكتر من ٣٫٣ مليون شخص، والبراند نفسه متابعينه حوالي ١٣٠ ألف. وأكبر بوستات مستر بيرد؟ هو الواجهة وسفير العلامة التجارية.",b_cta:"للتعاون ←",
 z_h2:"بعد أسبوعين من النهارده<span>هتبقى فاهم جسمك.</span>",z_p:"أو هتكون لسه بتدوّر على الخطة الجاية. إنت اللي تختار.",z_cta:"ابدأ التقييم ببلاش ←"};
 const EN={};document.querySelectorAll("[data-i18n]").forEach(e=>EN[e.dataset.i18n]=e.textContent);document.querySelectorAll("[data-i18n-html]").forEach(e=>EN[e.dataset.i18nHtml]=e.innerHTML);
 document.getElementById("lang").onclick=()=>{
@@ -453,6 +453,7 @@ document.getElementById("lang").onclick=()=>{
   document.querySelectorAll("[data-i18n-html]").forEach(e=>{const v=d[e.dataset.i18nHtml];if(v)e.innerHTML=v});
   document.querySelectorAll("[data-en]").forEach(e=>e.textContent=e.dataset[lang]);
   document.getElementById("lang").textContent=lang==="ar"?"English":"العربية";
+  document.getElementById("hnote").hidden=lang==="ar";
   render();
 };
 </script>
